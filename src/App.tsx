@@ -7,7 +7,7 @@ function App() {
     <>
       <div className="mainApp">
         <Navbar />
-        {/* <Slideshow /> */}
+        <Slideshow />
       </div>
     </>
   );

@@ -1,16 +1,14 @@
 .navContainer {
   display: flex;
   justify-content: space-between;
-  flex-direction: row;
   width: 100%;
-  padding-left: 5%;
-  padding-right: 5%;
   background-color: darkgray;
   align-items: center;
 }
 
 .navTitle {
   background-color: gray;
+  margin-left: 5%;
 }
 
 .navUlWrapper {
@@ -35,7 +33,7 @@
   color: orange;
 }
 
-.navLink::after{
+.navLink::after {
   content: "";
   position: absolute;
   left: 0;
@@ -47,13 +45,14 @@
   transition: transform 0.3s ease-in-out;
 }
 
-.navLink:hover:after{
+.navLink:hover:after {
   transform: scaleX(1);
 }
 
 .navSocials {
   display: flex;
   align-items: center;
+  margin-right: 5%;
 }
 
 .navSocailImg {

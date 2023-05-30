@@ -1,7 +1,37 @@
-.slideShowContainer{
-    height: 700px;
-    background-image: url("../assets/models/model1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+.slideShowContainer {
+  height: 920px;
+  background-image: url("../assets/models/model1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.slideHolder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.slideCenterBox {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 25%;
+
+  .slideTitle {
+    color: white;
+    border-bottom: 2px orange solid;
+  }
+  .slideSubTitle {
+    color: white;
+  }
+  .slideButtonHolder {
+    justify-content: space-evenly;
+  }
+}
+
+.slideArrowBtn {
+  margin-left: 2%;
+  margin-right: 2%;
 }
