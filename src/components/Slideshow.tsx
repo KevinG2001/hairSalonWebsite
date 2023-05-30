@@ -11,7 +11,9 @@ function Slideshow() {
           </div>
           <div className={slideStyles.slideCenterBox}>
             <div className={slideStyles.slideTitle}>Welcome To</div>
-            <div className={slideStyles.slideSubTitle}>Hair Salon</div>
+            <div className={slideStyles.slideSubTitle}>
+              Debonair Hair & Beauty
+            </div>
             <div className={slideStyles.slideButtonHolder}>
               <button id={slideStyles.slideBrowseBtn}>Browse Shop</button>
               <button id={slideStyles.slideBookBtn}>Book Now</button>
