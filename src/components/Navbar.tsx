@@ -1,9 +1,9 @@
 import React from "react";
 import navStyles from "../styling/navStyles.module.scss";
-import facebookImg from "../assets/facebookImg.svg";
-import instagramImg from "../assets/instagramImg.svg";
-import searchImg from "../assets/searchImg.svg";
-import cartImg from "../assets/cartImg.svg";
+import facebookImg from "../assets/socialImages/facebookImg.svg";
+import instagramImg from "../assets/socialImages/instagramImg.svg";
+import searchImg from "../assets/socialImages/searchImg.svg";
+import cartImg from "../assets/socialImages/cartImg.svg";
 
 function Navbar() {
   return (
