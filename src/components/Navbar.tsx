@@ -1,7 +1,9 @@
 import React from "react";
 import navStyles from "../styling/navStyles.module.scss";
-import facebookImg from "../assets/facebookImg.png";
-import instagramImg from "../assets/instagramImg.png";
+import facebookImg from "../assets/facebookImg.svg";
+import instagramImg from "../assets/instagramImg.svg";
+import searchImg from "../assets/searchImg.svg";
+import cartImg from "../assets/cartImg.svg";
 
 function Navbar() {
   return (
@@ -21,6 +23,8 @@ function Navbar() {
       <div className={navStyles.navSocials}>
         <img src={facebookImg} alt="" className={navStyles.navSocailImg} />
         <img src={instagramImg} alt="" className={navStyles.navSocailImg} />
+        <img src={searchImg} alt="" className={navStyles.navSocailImg} />
+        <img src={cartImg} alt="" className={navStyles.navSocailImg} />
       </div>
     </nav>
   );
