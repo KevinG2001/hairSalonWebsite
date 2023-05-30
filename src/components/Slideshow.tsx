@@ -13,8 +13,8 @@ function Slideshow() {
             <div className={slideStyles.slideTitle}>Welcome To</div>
             <div className={slideStyles.slideSubTitle}>Hair Salon</div>
             <div className={slideStyles.slideButtonHolder}>
-              <button>Browse Shop</button>
-              <button>Book Now</button>
+              <button id={slideStyles.slideBrowseBtn}>Browse Shop</button>
+              <button id={slideStyles.slideBookBtn}>Book Now</button>
             </div>
           </div>
           <div className={slideStyles.slideArrowBtn}>

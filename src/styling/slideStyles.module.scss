@@ -26,8 +26,26 @@
   .slideSubTitle {
     color: white;
   }
-  .slideButtonHolder {
-    justify-content: space-evenly;
+  .slideButtonHolder button {
+    color: orange;
+    margin-right: 10px;
+    border-radius: 15px;
+    border: 2px orange solid;
+    cursor: pointer;
+  }
+
+  #slideBrowseBtn:hover {
+    background-color: orange;
+    color: white;
+  }
+
+  #slideBookBtn {
+    color: white;
+    background-color: orange;
+  }
+  #slideBookBtn:hover {
+    color: orange;
+    background-color: white;
   }
 }
 
