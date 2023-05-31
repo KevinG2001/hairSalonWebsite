@@ -1,0 +1,36 @@
+.catContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cateBox {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 75%;
+  flex-wrap: wrap;
+}
+
+.catOption {
+  position: relative;
+  background-image: url(../assets//models/model1.jpg);
+  margin-right: 5%;
+  margin-top: 1%;
+  height: 200px;
+  width: 200px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.catOption button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}

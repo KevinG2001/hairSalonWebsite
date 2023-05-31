@@ -1,4 +1,5 @@
 import "./App.css";
+import Category from "./components/Category";
 import Navbar from "./components/Navbar";
 import Slideshow from "./components/Slideshow";
 
@@ -8,6 +9,7 @@ function App() {
       <div className="mainApp">
         <Navbar />
         <Slideshow />
+        <Category />
       </div>
     </>
   );
