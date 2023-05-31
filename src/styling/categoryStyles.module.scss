@@ -27,6 +27,10 @@
   border-radius: 25px;
 }
 
+.catOption:hover {
+  box-shadow: 0 0 20px rgba(118, 117, 121, 0.7);
+}
+
 .catOption button {
   display: flex;
   flex-direction: column;
