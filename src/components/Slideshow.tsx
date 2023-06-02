@@ -1,13 +1,15 @@
 import React from "react";
 import slideStyles from "../styling/slideStyles.module.scss";
-
+import leftArrow from "../assets/arrow-left.svg";
+import rightArrow from "../assets/arrow-right.svg";
 function Slideshow() {
+  console.log(leftArrow);
   return (
     <>
       <div className={slideStyles.slideShowContainer}>
         <div className={slideStyles.slideHolder}>
           <div className={slideStyles.slideArrowBtn}>
-            <button>Left</button>
+            <img src={leftArrow} alt="" className={slideStyles.arrowSVG} />
           </div>
           <div className={slideStyles.slideCenterBox}>
             <div className={slideStyles.slideTitle}>Welcome To</div>
@@ -20,7 +22,7 @@ function Slideshow() {
             </div>
           </div>
           <div className={slideStyles.slideArrowBtn}>
-            <button>Right</button>
+            <img src={rightArrow} alt="" className={slideStyles.arrowSVG} />
           </div>
         </div>
       </div>
