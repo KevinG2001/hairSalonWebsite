@@ -3,7 +3,6 @@ import slideStyles from "../styling/slideStyles.module.scss";
 import leftArrow from "../assets/arrow-left.svg";
 import rightArrow from "../assets/arrow-right.svg";
 function Slideshow() {
-  console.log(leftArrow);
   return (
     <>
       <div className={slideStyles.slideShowContainer}>

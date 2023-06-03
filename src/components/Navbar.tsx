@@ -4,11 +4,14 @@ import facebookImg from "../assets/socialImages/facebookImg.svg";
 import instagramImg from "../assets/socialImages/instagramImg.svg";
 import searchImg from "../assets/socialImages/searchImg.svg";
 import cartImg from "../assets/socialImages/cartImg.svg";
+import logo from "../assets/debonair-logo.svg";
 
 function Navbar() {
   return (
     <nav className={navStyles.navContainer}>
-      <div className={navStyles.navTitle}>Debonair</div>
+      <div className={navStyles.navTitle}>
+        <img src={logo} alt="" className={navStyles.navLogo} />
+      </div>
       <div className={navStyles.navUlWrapper}>
         <ul className={navStyles.navUl}>
           <button className={navStyles.navLink}>Home</button>
