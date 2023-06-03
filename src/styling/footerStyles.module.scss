@@ -1,0 +1,27 @@
+.footerContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: darkgray;
+    height: 400px;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.footerContentWrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerContentPanel{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 200px;
+    background-color: red;
+}
