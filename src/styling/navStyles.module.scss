@@ -33,7 +33,7 @@
 }
 
 .navLink:hover {
-  color: orange;
+  color: $orangehighlight-colour;
 }
 
 .navLink::after {
@@ -43,7 +43,7 @@
   bottom: 0;
   width: 100%;
   height: 2px; /* Adjust this value to control the thickness of the arrow */
-  background-color: orange;
+  background-color: $orangehighlight-colour;
   transform: scaleX(0);
   transition: transform 0.3s ease-in-out;
 }
@@ -61,5 +61,4 @@
 .navSocailImg {
   width: 25px;
   margin-right: 15px;
-  fill: red;
 }
