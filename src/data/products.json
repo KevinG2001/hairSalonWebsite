@@ -1,0 +1,49 @@
+{
+  "products": [
+    {
+      "name": "SDL Extraordinary",
+      "id": "1",
+      "brand": "",
+      "category": "Haircare",
+      "data_added": "13/06/2023",
+      "price": "18.00",
+      "description": ""
+    },
+    {
+      "name": "SDL Moisture detangling fluid",
+      "id": "2",
+      "brand": "",
+      "category": "Haircare",
+      "data_added": "10/12/2022",
+      "price": "24.00",
+      "description": ""
+    },
+    {
+      "name": "SDL energzing tonic",
+      "id": "3",
+      "brand": "",
+      "category": "Beauty",
+      "data_added": "19/12/2019",
+      "price": "30",
+      "description": ""
+    },
+    {
+      "name": "",
+      "id": "",
+      "brand": "",
+      "category": "",
+      "data_added": "",
+      "price": "",
+      "description": ""
+    },
+    {
+      "name": "",
+      "id": "",
+      "brand": "",
+      "category": "",
+      "data_added": "",
+      "price": "",
+      "description": ""
+    }
+  ]
+}
