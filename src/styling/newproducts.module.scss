@@ -1,1 +1,24 @@
 @import "./default.module.scss";
+
+.nProductContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.nProductContainerTitle {
+  align-items: center;
+  justify-content: center;
+}
+
+.nProductCardHolder {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.nProductCard {
+  width: 150px;
+}
