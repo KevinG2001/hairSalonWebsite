@@ -12,7 +12,7 @@ function Footer() {
           <div className={footerStyles.footerContentPanel}>
             <div className={footerStyles.footerTitle}>SHOP NOW</div>
             <div className={footerStyles.footerContent}>
-              <div>haircare</div>
+              <div className={footerStyles.footerContent}>haircare</div>
             </div>
           </div>
           <div className={footerStyles.footerContentPanel}>
@@ -25,12 +25,10 @@ function Footer() {
           </div>
           <div className={footerStyles.footerContentPanel}>
             <div className={footerStyles.footerTitle}>SITE INFO</div>
-            <div>
-              <div className={footerStyles.footerContent}>Home</div>
-              <div className={footerStyles.footerContent}>dermalogica</div>
-              <div className={footerStyles.footerContent}>
-                delivery & returns policy
-              </div>
+            <div className={footerStyles.footerContent}>Home</div>
+            <div className={footerStyles.footerContent}>dermalogica</div>
+            <div className={footerStyles.footerContent}>
+              delivery & returns policy
             </div>
           </div>
         </div>
