@@ -9,6 +9,7 @@ const Newproducts = () => {
       <div className={nProductStyles.nProductCardHolder}>
         {productData.products.map((product) => (
           <div className={nProductStyles.nProductCard} key={product.id}>
+            <img src={product.image} alt="img" />
             <div className={nProductStyles.nProductTitle}>{product.name}</div>
           </div>
         ))}
