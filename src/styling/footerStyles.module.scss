@@ -5,10 +5,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: gray;
+  background-color: black;
   height: 300px;
   width: 100%;
   margin-top: 5%;
+}
+
+.footerContainer {
+  color: $greyFont-colour;
 }
 
 .footerContentWrapper {
@@ -33,10 +37,14 @@
     justify-content: center;
     width: auto;
     height: auto;
+    padding-top: 25px;
   }
 
   .footerContent {
     font-size: 14px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
   }
   .footerSocialHolder {
     display: flex;
@@ -62,7 +70,12 @@
 
 .footerContentPanel button:hover {
   background-color: $orangehighlight-colour;
+  cursor: pointer;
   color: white;
+}
+
+.footerContainer button {
+  margin-top: 45px;
 }
 
 .footerLogo {
