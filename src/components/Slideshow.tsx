@@ -1,14 +1,60 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import slideStyles from "../styling/slideStyles.module.scss";
 import leftArrow from "../assets/arrow-left.svg";
 import rightArrow from "../assets/arrow-right.svg";
-function Slideshow() {
+
+
+const images = [
+  "src/assets/slideshowBgs/backgroundModel.webp",
+  "src/assets/models/model1.jpg"
+  ];
+
+  function Slideshow() {
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+    const [isAnimating, setIsAnimating] = useState(false);
+  
+    const nextImage = () => {
+      if (!isAnimating) {
+        setIsAnimating(true);
+        setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+      }
+    };
+  
+    const previousImage = () => {
+      if (!isAnimating) {
+        setIsAnimating(true);
+        setCurrentImageIndex((prevIndex) =>
+          prevIndex === 0 ? images.length - 1 : prevIndex - 1
+        );
+      }
+    };
+  
+    useEffect(() => {
+      const interval = setInterval(nextImage, 5000);
+  
+      return () => {
+        clearInterval(interval);
+      };
+    }, []);
+  
+    const handleTransitionEnd = () => {
+      setIsAnimating(false);
+    };
+
   return (
     <>
-      <div className={slideStyles.slideShowContainer}>
+      <div
+        className={`${slideStyles.slideShowContainer} ${
+          isAnimating ? slideStyles.animating : ""
+        }`}
+        onTransitionEnd={handleTransitionEnd}
+        style={{
+          backgroundImage: `url(${images[currentImageIndex]})`,
+        }}
+      >
         <div className={slideStyles.slideHolder}>
           <div className={slideStyles.slideArrowBtn}>
-            <img src={leftArrow} alt="" className={slideStyles.arrowSVG} />
+            <img src={leftArrow} alt="" className={slideStyles.arrowSVG} onClick={previousImage}/>
           </div>
           <div className={slideStyles.slideCenterBox}>
             <div className={slideStyles.slideTitle}>Welcome To</div>
@@ -21,7 +67,7 @@ function Slideshow() {
             </div>
           </div>
           <div className={slideStyles.slideArrowBtn}>
-            <img src={rightArrow} alt="" className={slideStyles.arrowSVG} />
+            <img src={rightArrow} alt="" className={slideStyles.arrowSVG} onClick={nextImage}/>
           </div>
         </div>
       </div>
