@@ -2,6 +2,7 @@ import React from "react";
 import nProductStyles from "../styling/productStyling.module.scss";
 import productData from "../data/products.json";
 import { Product } from "../types/producyTypes.ts";
+import { Link } from "react-router-dom";
 
 const Newproducts = () => {
   return (
@@ -27,9 +28,12 @@ const Newproducts = () => {
                 </div>
                 <div className={nProductStyles.nProductButtonHolder}>
                   <div className={nProductStyles.nProductLine}></div>
-                  <button className={nProductStyles.nProductBtn}>
+                  <Link
+                    to={`/products/${product.name}`}
+                    className={nProductStyles.nProductBtn}
+                  >
                     View Details
-                  </button>
+                  </Link>
                   <div className={nProductStyles.nProductLine}></div>
                 </div>
               </div>
