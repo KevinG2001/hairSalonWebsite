@@ -1,3 +1,4 @@
+import React from "react";
 import "./App.css";
 import Category from "./components/Category";
 import Footer from "./components/Footer";
@@ -8,16 +9,14 @@ import Newproducts from "./components/NewProducts";
 
 function App() {
   return (
-    <>
-      <div className="mainApp">
-        <Navbar />
-        <Slideshow />
-        <Category />
-        <AllProducts />
-        <Newproducts />
-        <Footer />
-      </div>
-    </>
+    <div className="mainApp">
+      <Navbar />
+      <Slideshow />
+      <Category />
+      <AllProducts />
+      <Newproducts />
+      <Footer />
+    </div>
   );
 }
 
