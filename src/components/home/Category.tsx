@@ -1,5 +1,5 @@
 import React from "react";
-import catStyles from "../styling/categoryStyles.module.scss";
+import catStyles from "../../styling/categoryStyles.module.scss";
 
 function Category() {
   return (

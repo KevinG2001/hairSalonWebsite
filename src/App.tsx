@@ -1,21 +1,11 @@
 import React from "react";
 import "./App.css";
-import Category from "./components/Category";
-import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
-import AllProducts from "./components/AllProducts";
-import Slideshow from "./components/Slideshow";
-import Newproducts from "./components/NewProducts";
+import Home from "./components/home/Home";
 
 function App() {
   return (
     <div className="mainApp">
-      <Navbar />
-      <Slideshow />
-      <Category />
-      <AllProducts />
-      <Newproducts />
-      <Footer />
+      <Home />
     </div>
   );
 }

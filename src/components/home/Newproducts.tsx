@@ -1,7 +1,7 @@
 import React from "react";
-import productStyling from "../styling/productStyling.module.scss";
-import productData from "../data/products.json";
-import { Product } from "../types/producyTypes";
+import productStyling from ".../styling/productStyling.module.scss";
+import productData from "../../data/products.json";
+import { Product } from "../../types/producyTypes";
 
 function filterProductsByDate(products: Product[]): Product[] {
   const currentDate = new Date();
