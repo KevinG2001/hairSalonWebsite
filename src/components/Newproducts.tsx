@@ -17,10 +17,6 @@ function filterProductsByDate(products: Product[]): Product[] {
 function Newproducts() {
   const filteredProducts = filterProductsByDate(productData.products);
 
-  const openProductClick = (productName: string) => {
-    const url = `/product/${encodeURIComponent(productName)}`;
-    window.location.href = url;
-  };
   return (
     <>
       <div className={productStyling.nProductContainer}>
@@ -44,10 +40,7 @@ function Newproducts() {
                 </div>
                 <div className={productStyling.nProductButtonHolder}>
                   <div className={productStyling.nProductLine}></div>
-                  <button
-                    className={productStyling.nProductBtn}
-                    onClick={openProductClick}
-                  >
+                  <button className={productStyling.nProductBtn}>
                     View Details
                   </button>
                   <div className={productStyling.nProductLine}></div>
