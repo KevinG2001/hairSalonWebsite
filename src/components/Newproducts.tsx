@@ -1,15 +1,7 @@
 import React from "react";
 import productStyling from "../styling/productStyling.module.scss";
 import productData from "../data/products.json";
-
-interface Product {
-  id: number;
-  name: string;
-  date: string;
-  image: string;
-  price: number;
-  // Add any other properties present in your product data
-}
+import { Product } from "../types/producyTypes";
 
 function filterProductsByDate(products: Product[]): Product[] {
   const currentDate = new Date();

@@ -1,6 +1,7 @@
 import React from "react";
 import nProductStyles from "../styling/productStyling.module.scss";
 import productData from "../data/products.json";
+import { Product } from "../types/producyTypes.ts";
 
 const Newproducts = () => {
   return (
