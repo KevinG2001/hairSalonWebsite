@@ -1,41 +1,39 @@
-import React from "react";
-import nProductStyles from "../styling/newproducts.module.scss";
+import React from 'react';
 import productData from "../data/products.json";
 
-const Newproducts = () => {
+interface Product {
+  id: number;
+  name: string;
+  date: string;
+  // Add any other properties present in your product data
+}
+
+function filterProductsByDate(products: Product[]): Product[] {
+  const currentDate = new Date();
+  const sixMonthsAgo = new Date();
+  sixMonthsAgo.setMonth(sixMonthsAgo.getMonth() - 6);
+
+  return products.filter((product: Product) => {
+    const productDate = new Date(product.date);
+    return productDate >= sixMonthsAgo && productDate <= currentDate;
+  });
+}
+
+function Newproducts() {
+  const filteredProducts = filterProductsByDate(productData.products);
+
   return (
-    <div className={nProductStyles.nProductContainer}>
-      <h2 className={nProductStyles.nProductContainerTitle}>NewProducts</h2>
-      <div className={nProductStyles.nProductBox}>
-        <div className={nProductStyles.nProductCardHolder}>
-          {productData.products.map((product) => (
-            <div className={nProductStyles.nProductCard} key={product.id}>
-              <img
-                className={nProductStyles.nProductImg}
-                src={product.image}
-                alt="img"
-              />
-              <div className={nProductStyles.nProductCardInfo}>
-                <div className={nProductStyles.nProductTitle}>
-                  {product.name}
-                </div>
-                <div className={nProductStyles.nProductPrice}>
-                  €{product.price}
-                </div>
-                <div className={nProductStyles.nProductButtonHolder}>
-                  <div className={nProductStyles.nProductLine}></div>
-                  <button className={nProductStyles.nProductBtn}>
-                    View Details
-                  </button>
-                  <div className={nProductStyles.nProductLine}></div>
-                </div>
-              </div>
-            </div>
+    <>
+      <div>
+        <h2>New Products</h2>
+        <ul>
+          {filteredProducts.map(product => (
+            <li key={product.id}>{product.name}</li>
           ))}
-        </div>
+        </ul>
       </div>
-    </div>
+    </>
   );
-};
+}
 
 export default Newproducts;

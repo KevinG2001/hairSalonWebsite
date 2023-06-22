@@ -6,7 +6,7 @@ import rightArrow from "../assets/arrow-right.svg";
 
 const images = [
   "src/assets/slideshowBgs/backgroundModel.webp",
-  "src/assets/models/model1.jpg"
+  "src/assets/slideshowBgs/backgroundModel2.webp"
   ];
 
   function Slideshow() {
