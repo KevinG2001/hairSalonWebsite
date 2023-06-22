@@ -1,23 +1,57 @@
 import React from "react";
-import nProductStyles from "../styling/newproducts.module.scss";
+import productStyling from "../styling/productStyling.module.scss";
 import productData from "../data/products.json";
+import { Product } from "../types/producyTypes";
 
-const Newproducts = () => {
+function filterProductsByDate(products: Product[]): Product[] {
+  const currentDate = new Date();
+  const sixMonthsAgo = new Date();
+  sixMonthsAgo.setMonth(sixMonthsAgo.getMonth() - 6);
+
+  return products.filter((product: Product) => {
+    const productDate = new Date(product.date);
+    return productDate >= sixMonthsAgo && productDate <= currentDate;
+  });
+}
+
+function Newproducts() {
+  const filteredProducts = filterProductsByDate(productData.products);
+
   return (
-    <div className={nProductStyles.nProductContainer}>
-      <div className={nProductStyles.nProductBox}>
-      <h2 className={nProductStyles.nProductContainerTitle}>NewProducts</h2>
-      <div className={nProductStyles.nProductCardHolder}>
-        {productData.products.map((product) => (
-          <div className={nProductStyles.nProductCard} key={product.id}>
-            <img className={nProductStyles.nProductImg} src={product.image} alt="img" />
-            <div className={nProductStyles.nProductTitle}>{product.name}</div>
-          </div>
-        ))}
+    <>
+      <div className={productStyling.nProductContainer}>
+        <h2 className={productStyling.nProductContainerTitle}>
+          <span>New</span> Products
+        </h2>
+        <div className={productStyling.nProductBox}>
+          {filteredProducts.map((product) => (
+            <div className={productStyling.nProductCard}>
+              <img
+                className={productStyling.nProductImg}
+                src={product.image}
+                alt=""
+              />
+              <div className={productStyling.nProductCardInfo}>
+                <div className={productStyling.nProductTitle}>
+                  {product.name}
+                </div>
+                <div className={productStyling.nProductPrice}>
+                  €{product.price}
+                </div>
+                <div className={productStyling.nProductButtonHolder}>
+                  <div className={productStyling.nProductLine}></div>
+                  <button className={productStyling.nProductBtn}>
+                    View Details
+                  </button>
+                  <div className={productStyling.nProductLine}></div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
-      </div>
-    </div>
+    </>
   );
-};
+}
 
 export default Newproducts;

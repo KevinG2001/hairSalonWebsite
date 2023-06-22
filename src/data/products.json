@@ -3,101 +3,101 @@
     {
       "name": "Ultracalming Cleanser",
       "milliliter": "250ml",
-      "id": "1",
+      "id": 1,
       "brand": "",
       "category": "Ultra-Calming",
-      "data_added": "13/06/2023",
-      "price": "42.00",
+      "date": "2023-01-15",
+      "price": 42,
       "description": "",
       "image": "src/assets/products/UltracalmingCleanser.webp"
     },
     {
       "name": "Ultracalming Serum Concentrate",
       "milliliter": "40ml",
-      "id": "2",
+      "id": 2,
       "brand": "",
       "category": "Ultra-Calming",
-      "data_added": "10/12/2022",
-      "price": "24.00",
+      "date": "10/12/2022",
+      "price": 24,
       "description": "",
       "image": "src/assets/products/UltracalmingSerumConcentrate.webp"
     },
     {
       "name": "Calm Water Gel",
       "milliliter": "50ml",
-      "id": "3",
+      "id": 3,
       "brand": "",
       "category": "Ultra-Calming",
-      "data_added": "19/12/2019",
-      "price": "30",
+      "date": "2023-01-15",
+      "price": 30,
       "description": "",
       "image": "src/assets/products/CalmWaterGel.webp"
     },
     {
       "name": "Barrier Defense Booster",
       "milliliter": "50ml",
-      "id": "4",
+      "id": 4,
       "brand": "",
       "category": "Ultra-Calming",
-      "data_added": "",
-      "price": "",
+      "date": "",
+      "price": null,
       "description": "",
       "image": "src/assets/products/BarrierDefenseBooster.webp"
     },
     {
       "name": "Dynamic Skin Recovery spf50",
       "milliliter": "50ml",
-      "id": "5",
+      "id": 5,
       "brand": "",
       "category": "Age Smart",
-      "data_added": "",
-      "price": "",
+      "date": "",
+      "price": null,
       "description": "",
-      "image": "src/assets/products/"
+      "image": "src/assets/products/DynamicSkinRecoveryspf50.webp"
     },
     {
       "name": "Daily Superfoliant ",
       "milliliter": "57g",
-      "id": "6",
+      "id": 6,
       "brand": "",
       "category": "Age Smart",
-      "data_added": "",
-      "price": "",
+      "date": "",
+      "price": null,
       "description": "",
-      "image": "src/assets/products/"
+      "image": "src/assets/products/DailySuperfoliant.webp"
     },
     {
-      "name": "Multivitamin Power Recover Masque",
+      "name": "Multivitamin Power Recovery Masque",
       "milliliter": "75ml",
-      "id": "7",
+      "id": 7,
       "brand": "",
       "category": "Age Smart",
-      "data_added": "",
-      "price": "",
+      "date": "",
+      "price": null,
       "description": "",
-      "image": "src/assets/products/"
+      "image": "src/assets/products/MultivitaminPowerRecoveryMasque.webp"
     },
     {
       "name": "Special Cleansing Gel",
       "milliliter": "500ml",
-      "id": "8",
+      "id": 8,
       "brand": "",
       "category": "Daily Skin Health",
-      "data_added": "",
-      "price": "",
+      "date": "",
+      "price": null,
       "description": "",
       "image": "src/assets/products/SpecialCleansingGel.webp"
     },
     {
       "name": "Skin Smoothing Cream",
       "milliliter": "100ml",
-      "id": "9",
+      "id": 9,
       "brand": "",
       "category": "Age Smart",
-      "data_added": "",
-      "price": "",
+      "date": "2023-01-15",
+      "price": 24,
       "description": "",
-      "image": "src/assets/products/"
+      "image": "src/assets/products/SkinSmoothingCream.webp"
     }
   ]
 }
