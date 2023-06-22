@@ -19,6 +19,11 @@
 .nProductContainerTitle {
   align-items: center;
   justify-content: center;
+  border-bottom: 3px solid $orangehighlight-colour;
+}
+
+.nProductContainerTitle span {
+  color: $orangehighlight-colour;
 }
 
 .nProductCardHolder {
@@ -71,6 +76,9 @@
   height: 100%;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .nProductTitle {
   width: 100%;

@@ -5,7 +5,9 @@ import productData from "../data/products.json";
 const Newproducts = () => {
   return (
     <div className={nProductStyles.nProductContainer}>
-      <h2 className={nProductStyles.nProductContainerTitle}>AllProducts</h2>
+      <h2 className={nProductStyles.nProductContainerTitle}>
+        <span>All </span>Products
+      </h2>
       <div className={nProductStyles.nProductBox}>
         <div className={nProductStyles.nProductCardHolder}>
           {productData.products.map((product) => (

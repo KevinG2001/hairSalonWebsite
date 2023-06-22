@@ -28,7 +28,9 @@ function Newproducts() {
   return (
     <>
       <div className={productStyling.nProductContainer}>
-        <h2 className={productStyling.nProductContainerTitle}>New Products</h2>
+        <h2 className={productStyling.nProductContainerTitle}>
+          <span>New</span> Products
+        </h2>
         <div className={productStyling.nProductBox}>
           {filteredProducts.map((product) => (
             <div className={productStyling.nProductCard}>
