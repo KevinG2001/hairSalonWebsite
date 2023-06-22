@@ -2,8 +2,9 @@ import "./App.css";
 import Category from "./components/Category";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
-import Newproducts from "./components/Newproducts";
+import AllProducts from "./components/AllProducts";
 import Slideshow from "./components/Slideshow";
+import Newproducts from "./components/NewProducts";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Navbar />
         <Slideshow />
         <Category />
+        <AllProducts />
         <Newproducts />
         <Footer />
       </div>
