@@ -7,7 +7,7 @@
       "brand": "",
       "category": "Ultra-Calming",
       "date": "2023-01-15",
-      "price": "42.00",
+      "price": 42,
       "description": "",
       "image": "src/assets/products/UltracalmingCleanser.webp"
     },
@@ -18,7 +18,7 @@
       "brand": "",
       "category": "Ultra-Calming",
       "date": "10/12/2022",
-      "price": "24.00",
+      "price": 24,
       "description": "",
       "image": "src/assets/products/UltracalmingSerumConcentrate.webp"
     },
@@ -29,7 +29,7 @@
       "brand": "",
       "category": "Ultra-Calming",
       "date": "2023-01-15",
-      "price": "30",
+      "price": 30,
       "description": "",
       "image": "src/assets/products/CalmWaterGel.webp"
     },
@@ -40,7 +40,7 @@
       "brand": "",
       "category": "Ultra-Calming",
       "date": "",
-      "price": "",
+      "price": null,
       "description": "",
       "image": "src/assets/products/BarrierDefenseBooster.webp"
     },
@@ -51,7 +51,7 @@
       "brand": "",
       "category": "Age Smart",
       "date": "",
-      "price": "",
+      "price": null,
       "description": "",
       "image": "src/assets/products/DynamicSkinRecoveryspf50.webp"
     },
@@ -62,7 +62,7 @@
       "brand": "",
       "category": "Age Smart",
       "date": "",
-      "price": "",
+      "price": null,
       "description": "",
       "image": "src/assets/products/DailySuperfoliant.webp"
     },
@@ -73,7 +73,7 @@
       "brand": "",
       "category": "Age Smart",
       "date": "",
-      "price": "",
+      "price": null,
       "description": "",
       "image": "src/assets/products/MultivitaminPowerRecoveryMasque.webp"
     },
@@ -84,7 +84,7 @@
       "brand": "",
       "category": "Daily Skin Health",
       "date": "",
-      "price": "",
+      "price": null,
       "description": "",
       "image": "src/assets/products/SpecialCleansingGel.webp"
     },
@@ -95,7 +95,7 @@
       "brand": "",
       "category": "Age Smart",
       "date": "2023-01-15",
-      "price": "",
+      "price": 24,
       "description": "",
       "image": "src/assets/products/SkinSmoothingCream.webp"
     }

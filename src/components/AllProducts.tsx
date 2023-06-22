@@ -1,5 +1,5 @@
 import React from "react";
-import nProductStyles from "../styling/newproducts.module.scss";
+import nProductStyles from "../styling/productStyling.module.scss";
 import productData from "../data/products.json";
 
 const Newproducts = () => {

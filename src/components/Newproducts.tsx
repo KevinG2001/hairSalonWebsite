@@ -1,10 +1,13 @@
-import React from 'react';
+import React from "react";
+import productStyling from "../styling/productStyling.module.scss";
 import productData from "../data/products.json";
 
 interface Product {
   id: number;
   name: string;
   date: string;
+  image: string;
+  price: number;
   // Add any other properties present in your product data
 }
 
@@ -24,13 +27,32 @@ function Newproducts() {
 
   return (
     <>
-      <div>
-        <h2>New Products</h2>
-        <ul>
-          {filteredProducts.map(product => (
-            <li key={product.id}>{product.name}</li>
+      <div className={productStyling.nProductContainer}>
+        <h2 className={productStyling.nProductContainerTitle}>New Products</h2>
+        <div className={productStyling.nProductBox}>
+          {filteredProducts.map((product) => (
+            <div className={productStyling.nProductCard}>
+              <img
+                className={productStyling.nProductImg}
+                src={product.image}
+                alt=""
+              />
+              <div className={productStyling.nProductCardInfo}>
+                <div className={productStyling.nProductTitle}>
+                  {product.name}
+                </div>
+                <div className={productStyling.nProductPrice}>
+                  €{product.price}
+                </div>
+                <div className={productStyling.nProductButtonHolder}>
+                  <div className={productStyling.nProductLine}></div>
+                  <div className={productStyling.nProductBtn}>View Details</div>
+                  <div className={productStyling.nProductLine}></div>
+                </div>
+              </div>
+            </div>
           ))}
-        </ul>
+        </div>
       </div>
     </>
   );
