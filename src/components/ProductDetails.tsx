@@ -18,20 +18,29 @@ const ProductDetails = () => {
           <>
             <img src={product.image} alt="" />
             <div className={productDetailStyling.detailContainer}>
-              <div>
+              <div className={productDetailStyling.productHeading}>
                 <h2>{product.name}</h2>
-                <p>Price: €{product.price}</p>
-                <p>Quanity</p>
-                <button>+</button>
-                <button>0</button>
-                <button>-</button>
-                <button>Add To Card</button>
-                <div className={productDetailStyling.description}>
-                  <div className={productDetailStyling.line}></div>
-                  <div className={productDetailStyling.descriptionTitle}>
-                    Product Description
-                  </div>
-                  <div className={productDetailStyling.line}></div>
+              </div>
+              <div className={productDetailStyling.productPrice}>
+                  €{product.price}
+              </div>
+              <div className={productDetailStyling.productCartOptions}>
+                Quantity:
+                <div className={productDetailStyling.quantitySelector}>
+                  <button className={productDetailStyling.selectorBtn}>-</button>
+                  <button className={productDetailStyling.selectorBtn}>0</button>
+                  <button className={productDetailStyling.selectorBtn}>+</button>
+                  {product.quantity <= 0 ? (
+                    <p>The product is out of stock </p>
+                  ) : (
+                    <button className={productDetailStyling.addBtn}>Add to cart</button>
+                  )}
+                </div>
+    
+                <div className={productDetailStyling.descriptionBreaker}>
+                  <div className={productDetailStyling.Line}></div>
+                  <div className={productDetailStyling.descriptionTitle}>product description</div>
+                  <div className={productDetailStyling.Line}></div>
                 </div>
               </div>
             </div>
