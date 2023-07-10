@@ -22,10 +22,10 @@ const ProductDetails = () => {
                 <h2>{product.name}</h2>
               </div>
               <div className={productDetailStyling.productPrice}>
-                  €{product.price}
+                  € {product.price}
               </div>
               <div className={productDetailStyling.productCartOptions}>
-                Quantity:
+                <span className={productDetailStyling.productSpan}>Quantity:</span>
                 <div className={productDetailStyling.quantitySelector}>
                   <button className={productDetailStyling.selectorBtn}>-</button>
                   <button className={productDetailStyling.selectorBtn}>0</button>

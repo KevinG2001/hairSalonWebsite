@@ -7,7 +7,7 @@
       "brand": "",
       "category": "Ultra-Calming",
       "date": "2023-01-15",
-      "price": 42.00,
+      "price": "42.00",
       "description": "",
       "image": "src/assets/products/UltracalmingCleanser.webp",
       "quantity": 1
@@ -19,7 +19,7 @@
       "brand": "",
       "category": "Ultra-Calming",
       "date": "10/12/2022",
-      "price": 24.00,
+      "price": "24.00",
       "description": "",
       "image": "src/assets/products/UltracalmingSerumConcentrate.webp",
       "quantity": 0
@@ -31,7 +31,7 @@
       "brand": "",
       "category": "Ultra-Calming",
       "date": "2023-01-15",
-      "price": 30.00,
+      "price": "30.00",
       "description": "",
       "image": "src/assets/products/CalmWaterGel.webp",
       "quantity": 1
@@ -103,7 +103,7 @@
       "brand": "",
       "category": "Age Smart",
       "date": "2023-01-15",
-      "price": 24.00,
+      "price": "24.00",
       "description": "",
       "image": "src/assets/products/SkinSmoothingCream.webp",
       "quantity": 1

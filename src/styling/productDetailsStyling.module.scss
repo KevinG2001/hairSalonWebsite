@@ -16,15 +16,18 @@
 }
 
 .productHeading{
-
+  height: 36px;
 }
 
-.productPice{
-
+.productPrice{
+  font-size: 26px;
 }
 
 .productCartOptions{
 
+  .productSpan{
+    font-size: 14px;
+  }
 }
 
 .quantitySelector{
@@ -46,6 +49,7 @@
   border: 0px;
   border-radius: 5px;
   margin-left: 25px;
+  font-size: 20px;
 }
 
 .descriptionBreaker{
@@ -53,11 +57,10 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
 }
 
 .Line{
-  width: 38%;
+  width: 200px;
   height: .5px;
   background-color: $orangehighlight-colour;
   align-items: center;
@@ -66,4 +69,9 @@
 
 .descriptionTitle{
   color: $orangehighlight-colour;
+  margin: 0px 2% 0px 2%;
+  width: 130px;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 16px;
 }
