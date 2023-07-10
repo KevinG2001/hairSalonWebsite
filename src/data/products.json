@@ -9,7 +9,7 @@
       "date": "2023-01-15",
       "price": "42.00",
       "description": "",
-      "image": "src/assets/products/UltracalmingCleanser.webp",
+      "image": "/src/assets/products/UltracalmingCleanser.webp",
       "quantity": 1
     },
     {
@@ -21,7 +21,7 @@
       "date": "10/12/2022",
       "price": "24.00",
       "description": "",
-      "image": "src/assets/products/UltracalmingSerumConcentrate.webp",
+      "image": "/src/assets/products/UltracalmingSerumConcentrate.webp",
       "quantity": 0
     },
     {
@@ -33,7 +33,7 @@
       "date": "2023-01-15",
       "price": "30.00",
       "description": "",
-      "image": "src/assets/products/CalmWaterGel.webp",
+      "image": "/src/assets/products/CalmWaterGel.webp",
       "quantity": 1
     },
     {
@@ -45,7 +45,7 @@
       "date": "",
       "price": null,
       "description": "",
-      "image": "src/assets/products/BarrierDefenseBooster.webp",
+      "image": "/src/assets/products/BarrierDefenseBooster.webp",
       "quantity": 1
     },
     {
@@ -57,7 +57,7 @@
       "date": "",
       "price": null,
       "description": "",
-      "image": "src/assets/products/DynamicSkinRecoveryspf50.webp",
+      "image": "/src/assets/products/DynamicSkinRecoveryspf50.webp",
       "quantity": 1
     },
     {
@@ -69,7 +69,7 @@
       "date": "",
       "price": null,
       "description": "",
-      "image": "src/assets/products/DailySuperfoliant.webp",
+      "image": "/src/assets/products/DailySuperfoliant.webp",
       "quantity": 1
     },
     {
@@ -81,7 +81,7 @@
       "date": "",
       "price": null,
       "description": "",
-      "image": "src/assets/products/MultivitaminPowerRecoveryMasque.webp",
+      "image": "/src/assets/products/MultivitaminPowerRecoveryMasque.webp",
       "quantity": 1
     },
     {
@@ -93,7 +93,7 @@
       "date": "",
       "price": null,
       "description": "",
-      "image": "src/assets/products/SpecialCleansingGel.webp",
+      "image": "/src/assets/products/SpecialCleansingGel.webp",
       "quantity": 1
     },
     {
@@ -105,7 +105,7 @@
       "date": "2023-01-15",
       "price": "24.00",
       "description": "",
-      "image": "src/assets/products/SkinSmoothingCream.webp",
+      "image": "/src/assets/products/SkinSmoothingCream.webp",
       "quantity": 1
     }
   ]

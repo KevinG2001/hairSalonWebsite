@@ -43,6 +43,9 @@ const ProductDetails = () => {
                     <div className={productDetailStyling.descriptionTitle}>product description</div>
                     <div className={productDetailStyling.Line}></div>
                   </div>
+                  <div className={productDetailStyling.productDescription}>
+                      {product.description}
+                  </div>
                 </div>
               </div>
             </>
