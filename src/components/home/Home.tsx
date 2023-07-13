@@ -1,10 +1,11 @@
 import React from "react";
 import Category from "./Category";
-import Newproducts from "../AllProducts";
+import Allproducts from "../AllProducts";
 import Navbar from "../global/Navbar";
 import Footer from "../global/Footer";
 import Slideshow from "./Slideshow";
 import DermalogicalBanner from "./DermalogicalBanner";
+import Newproducts from ".././home/Newproducts";
 
 function Home() {
   return (
