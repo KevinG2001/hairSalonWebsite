@@ -22,11 +22,12 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 25%;
+  width: 430px;
+  height: 230px;
   font-size: 20px;
 
   .slideTitle {
-    font-size: 20px;
+    font-size: 24px;
     color: white;
     border-bottom: 2px $orangehighlight-colour solid;
   }
@@ -35,13 +36,14 @@
     color: white;
   }
   .slideButtonHolder button {
-    margin-top: 32px;
-    font-size: 20px;
+    background-color: white;
     color: $orangehighlight-colour;
-    margin-right: 10px;
+    border: 1px solid $orangehighlight-colour;
     border-radius: 10px;
-    border: 2px $orangehighlight-colour solid;
-    cursor: pointer;
+    padding: 12px 40px;
+    margin: 5px;
+    font-size: 20px;
+    letter-spacing: 0.8px;
   }
 
   #slideBrowseBtn:hover {
