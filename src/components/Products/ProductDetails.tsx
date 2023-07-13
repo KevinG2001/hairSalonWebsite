@@ -1,8 +1,8 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import productData from "../data/products.json";
-import productDetailStyling from "../styling/productDetailsStyling.module.scss";
-import Navbar from "./global/Navbar";
+import productData from "../../data/products.json";
+import productDetailStyling from "../../styling/productDetailsStyling.module.scss";
+import Navbar from "../global/Navbar";
 
 const ProductDetails = () => {
   const { productname } = useParams();

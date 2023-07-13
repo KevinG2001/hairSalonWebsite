@@ -1,7 +1,7 @@
 import React from "react";
-import nProductStyles from "../styling/productStyling.module.scss";
-import productData from "../data/products.json";
-import { Product } from "../types/producyTypes.ts";
+import nProductStyles from "../../styling/productStyling.module.scss";
+import productData from "../../data/products.json";
+import { Product } from "../../types/producyTypes";
 import { Link } from "react-router-dom";
 
 const Newproducts = () => {

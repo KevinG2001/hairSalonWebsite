@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import slideStyles from "../../styling/slideStyles.module.scss";
 import leftArrow from "../../assets/arrow-left.svg";
 import rightArrow from "../../assets/arrow-right.svg";
+import { Link } from "react-router-dom";
 
 const images = [
   "src/assets/slideshowBgs/backgroundModel.webp",
@@ -66,7 +67,9 @@ function Slideshow() {
               Debonair Hair & Beauty
             </div>
             <div className={slideStyles.slideButtonHolder}>
+              <Link to={'/products'}>
               <button id={slideStyles.slideBrowseBtn}>Browse Shop</button>
+              </Link>
               <button id={slideStyles.slideBookBtn}>Book Now</button>
             </div>
           </div>
