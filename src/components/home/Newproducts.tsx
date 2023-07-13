@@ -2,6 +2,7 @@ import React from "react";
 import productStyling from "../../styling/productStyling.module.scss";
 import productData from "../../data/products.json";
 import { Product } from "../../types/producyTypes";
+import { Link } from "react-router-dom";
 
 //Function that shows the products that were adding in the last 6 months
 
@@ -51,9 +52,12 @@ function Newproducts() {
                 </div>
                 <div className={productStyling.nProductButtonHolder}>
                   <div className={productStyling.nProductLine}></div>
-                  <button className={productStyling.nProductBtn}>
+                  <Link
+                    to={`/products/${product.name}`}
+                    className={productStyling.nProductBtn}
+                  >
                     View Details
-                  </button>
+                  </Link>
                   <div className={productStyling.nProductLine}></div>
                 </div>
               </div>
