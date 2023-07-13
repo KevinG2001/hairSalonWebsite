@@ -18,7 +18,6 @@
 .catOption {
   cursor: pointer;
   position: relative;
-  background-image: url(../assets//models/model2.jpg);
   margin: 1% 20px 0px 0px;
   height: 260px;
   width: 280px;
@@ -26,7 +25,14 @@
   align-items: flex-end;
   justify-content: center;
   border-radius: 25px;
+
+  
 }
+.catImg{
+    width: inherit;
+    height: inherit;
+    border-radius: 25px;
+  }
 
 .catOption:hover {
   box-shadow: 0 0 20px rgba(118, 117, 121, 0.7);
