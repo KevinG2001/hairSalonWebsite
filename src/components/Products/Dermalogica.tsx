@@ -24,11 +24,16 @@ function Dermalgocia() {
     <>
       <Navbar />
       <div className={BrandStyling.Wrapper}>
+      <div className={BrandStyling.CardWrapper}>
         {dermalogicaBrands.map((brand) => (
           <>
-            <div>{brand}</div>
+              <div className={BrandStyling.Card} key={brand.id}>
+                <img src={`/src/assets/category/brands/${brand}.webp`} alt="Img" className={BrandStyling.BrandImg}/>
+                <button className={BrandStyling.Btn}>{brand}</button>
+              </div>
           </>
         ))}
+        </div>
       </div>
     </>
   );
