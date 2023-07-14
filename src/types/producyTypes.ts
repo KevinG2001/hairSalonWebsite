@@ -1,4 +1,6 @@
 export type Product = {
+  brand: any;
+  category: string;
   image: string | undefined;
   date: string | number | Date;
   id: number | null;
