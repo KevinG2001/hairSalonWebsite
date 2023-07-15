@@ -3,6 +3,7 @@ import BrandStyling from "../../styling/brandStyling.module.scss";
 import Navbar from "../global/Navbar";
 import productData from "../../data/products.json";
 import { Product } from "../../types/producyTypes";
+import { Link } from "react-router-dom";
 
 function filterProductsByBrand(products: Product[]): Product[] {
   const dermalogicaProducts = products.filter(
@@ -29,7 +30,9 @@ function Dermalgocia() {
           <>
               <div className={BrandStyling.Card} key={brand.id}>
                 <img src={`/src/assets/category/brands/${brand}.webp`} alt="Img" className={BrandStyling.BrandImg}/>
+                <Link to={`/category/${brand}`}>
                 <button className={BrandStyling.Btn}>{brand}</button>
+                </Link>
               </div>
           </>
         ))}
