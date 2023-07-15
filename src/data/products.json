@@ -119,6 +119,30 @@
       "description": "",
       "image": "/src/assets/products/clearingskinwash.webp",
       "quantity": 1
+    },
+    {
+      "name": "Hair Perfector",
+      "milliliter": "",
+      "id": 11,
+      "brand": "Olaplex",
+      "category": "haircare",
+      "date": "2023-01-15",
+      "price": "45.00",
+      "description": "",
+      "image": "/src/assets/products/Hair Perfector.webp",
+      "quantity": 1
+    },
+    {
+      "name": "Illuminating low shampoo",
+      "milliliter": "",
+      "id": 12,
+      "brand": "semi di lino",
+      "category": "haircare",
+      "date": "2023-01-15",
+      "price": "45.00",
+      "description": "",
+      "image": "/src/assets/products/Illuminating low shampoo.webp",
+      "quantity": 1
     }
   ]
 }

@@ -12,14 +12,18 @@ function Category() {
     <>
       <div className={catStyles.catContainer}>
         <div className={catStyles.cateBox}>
-          <div className={catStyles.catOption}>
-            <img src={haircare} alt="" className={catStyles.catImg} />
-            <button>Haircare</button>
-          </div>
-          <div className={catStyles.catOption} id={catStyles.stylingProduct}>
-            <img src={brunettehair} alt="" className={catStyles.catImg} />
-            <button>Styling Product</button>
-          </div>
+          <Link to={"/category/haircare"}>
+            <div className={catStyles.catOption}>
+              <img src={haircare} alt="" className={catStyles.catImg} />
+              <button>Haircare</button>
+            </div>
+          </Link>
+          <Link to={"/category/styling-products"}>
+            <div className={catStyles.catOption} id={catStyles.stylingProduct}>
+              <img src={brunettehair} alt="" className={catStyles.catImg} />
+              <button>Styling Product</button>
+            </div>
+          </Link>
           <div className={catStyles.catOption} id={catStyles.beauty}>
             <img src={blondehair} alt="" className={catStyles.catImg} />
             <button>Beauty</button>
