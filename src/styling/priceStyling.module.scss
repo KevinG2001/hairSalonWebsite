@@ -1,0 +1,28 @@
+@import "./default.module.scss";
+
+.Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.Wrapper {
+}
+
+.Title {
+  text-align: center;
+  text-decoration: underline $orangehighlight-colour;
+  font-size: 26px;
+}
+table {
+  width: 1200px;
+}
+
+.HeadRow {
+  background-color: $orangehighlight-colour;
+}
+
+.SubRow {
+  background-color: lightgray;
+}
