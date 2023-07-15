@@ -25,17 +25,21 @@ function Dermalgocia() {
     <>
       <Navbar />
       <div className={BrandStyling.Wrapper}>
-      <div className={BrandStyling.CardWrapper}>
-        {dermalogicaBrands.map((brand) => (
-          <>
+        <div className={BrandStyling.CardWrapper}>
+          {dermalogicaBrands.map((brand) => (
+            <>
               <div className={BrandStyling.Card} key={brand.id}>
-                <img src={`/src/assets/category/brands/${brand}.webp`} alt="Img" className={BrandStyling.BrandImg}/>
+                <img
+                  src={`/src/assets/category/brands/${brand}.webp`}
+                  alt="Img"
+                  className={BrandStyling.BrandImg}
+                />
                 <Link to={`/category/${brand}`}>
-                <button className={BrandStyling.Btn}>{brand}</button>
+                  <button className={BrandStyling.Btn}>{brand}</button>
                 </Link>
               </div>
-          </>
-        ))}
+            </>
+          ))}
         </div>
       </div>
     </>

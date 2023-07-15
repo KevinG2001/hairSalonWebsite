@@ -31,37 +31,33 @@ function Newproducts() {
 
   return (
     <>
-      <div className={productStyling.nProductContainer}>
+      <div className={productStyling.Container}>
         <h2 className={productStyling.nProductContainerTitle}>
           <span>New</span> Products
         </h2>
-        <div className={productStyling.nProductBox}>
+        <div className={productStyling.Wrapper}>
           {filteredProducts.map(
             (
               product //Mapsthrough the filtered products
             ) => (
-              <div className={productStyling.nProductCard} key={product.id}>
+              <div className={productStyling.Card} key={product.id}>
                 <img
-                  className={productStyling.nProductImg}
+                  className={productStyling.ProductImg}
                   src={product.image}
                   alt=""
                 />
-                <div className={productStyling.nProductCardInfo}>
-                  <div className={productStyling.nProductTitle}>
-                    {product.name}
-                  </div>
-                  <div className={productStyling.nProductPrice}>
-                    €{product.price}
-                  </div>
-                  <div className={productStyling.nProductButtonHolder}>
-                    <div className={productStyling.nProductLine}></div>
+                <div className={productStyling.CardInfo}>
+                  <div className={productStyling.Title}>{product.name}</div>
+                  <div className={productStyling.Price}>€{product.price}</div>
+                  <div className={productStyling.BtnHolder}>
+                    <div className={productStyling.Line}></div>
                     <Link
                       to={`/products/${product.name}`}
-                      className={productStyling.nProductBtn}
+                      className={productStyling.ProductBtn}
                     >
                       View Details
                     </Link>
-                    <div className={productStyling.nProductLine}></div>
+                    <div className={productStyling.Line}></div>
                   </div>
                 </div>
               </div>
