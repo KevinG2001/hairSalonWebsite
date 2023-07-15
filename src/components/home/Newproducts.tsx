@@ -19,7 +19,7 @@ import { Link } from "react-router-dom";
 
 //Function only shows the last 8 products in the json array
 function filterByLastEigthProducts(products: Product[]): Product[] {
-  const lastProductIndex = productData.products.length-1; //Variable to get the last index
+  const lastProductIndex = productData.products.length - 1; //Variable to get the last index
   const startIndex = Math.max(lastProductIndex - 7, 0); //Variable to get the starting index
 
   return products.slice(startIndex, lastProductIndex + 1);
@@ -31,38 +31,38 @@ function Newproducts() {
 
   return (
     <>
-      <div className={productStyling.nProductContainer}>
+      <div className={productStyling.Container}>
         <h2 className={productStyling.nProductContainerTitle}>
           <span>New</span> Products
         </h2>
-        <div className={productStyling.nProductBox}>
-          {filteredProducts.map((product) => ( //Mapsthrough the filtered products
-            <div className={productStyling.nProductCard}>
-              <img
-                className={productStyling.nProductImg}
-                src={product.image}
-                alt=""
-              />
-              <div className={productStyling.nProductCardInfo}>
-                <div className={productStyling.nProductTitle}>
-                  {product.name}
-                </div>
-                <div className={productStyling.nProductPrice}>
-                  €{product.price}
-                </div>
-                <div className={productStyling.nProductButtonHolder}>
-                  <div className={productStyling.nProductLine}></div>
-                  <Link
-                    to={`/products/${product.name}`}
-                    className={productStyling.nProductBtn}
-                  >
-                    View Details
-                  </Link>
-                  <div className={productStyling.nProductLine}></div>
+        <div className={productStyling.Wrapper}>
+          {filteredProducts.map(
+            (
+              product //Mapsthrough the filtered products
+            ) => (
+              <div className={productStyling.Card} key={product.id}>
+                <img
+                  className={productStyling.ProductImg}
+                  src={product.image}
+                  alt=""
+                />
+                <div className={productStyling.CardInfo}>
+                  <div className={productStyling.Title}>{product.name}</div>
+                  <div className={productStyling.Price}>€{product.price}</div>
+                  <div className={productStyling.BtnHolder}>
+                    <div className={productStyling.Line}></div>
+                    <Link
+                      to={`/products/${product.name}`}
+                      className={productStyling.ProductBtn}
+                    >
+                      View Details
+                    </Link>
+                    <div className={productStyling.Line}></div>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            )
+          )}
         </div>
       </div>
     </>
