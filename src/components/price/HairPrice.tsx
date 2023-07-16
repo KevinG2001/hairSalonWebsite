@@ -48,7 +48,7 @@ function HairPrice() {
             </tr>
             <tr className={priceStyling.SubRow}>
               <td>Additional Colour</td>
-              <td></td>
+              <td> </td>
               <td></td>
               <td>30</td>
             </tr>
