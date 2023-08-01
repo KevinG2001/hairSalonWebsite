@@ -9,22 +9,21 @@ function filterUniqueCategorys(products: Product[]): string[] {
   return uniqueCategories;
 }
 
-
 function Category() {
   const products = productData.products;
   const uniqueCategories = filterUniqueCategorys(products);
+
   return (
     <>
       <div className={catStyles.catContainer}>
         <div className={catStyles.cateBox}>
           {uniqueCategories.map((category) => (
-            <>
-              <Link to={`/category/${category}`}>
-                <div className={catStyles.catOption} id={catStyles.giftset}>
-                  <button>{category}</button>
-                </div>
-              </Link>
-            </>
+            <Link to={`/category/${category}`} key={category}>
+              <div className={catStyles.catOption} id={catStyles.giftset}>
+                <img src={`/src/assets/category/${category}.webp`} alt="" className={catStyles.catImg} />
+                <button>{category}</button>
+              </div>
+            </Link>
           ))}
         </div>
       </div>
