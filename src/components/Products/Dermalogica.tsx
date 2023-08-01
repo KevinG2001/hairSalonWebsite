@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 function filterProductsByBrand(products: Product[]): Product[] {
   const dermalogicaProducts = products.filter(
-    (product) => product.category === "dermalogica"
+    (product) => product.category === "Dermalogica"
   );
 
   const uniqueBrands = Array.from(
