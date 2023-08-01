@@ -11,20 +11,22 @@ function Navbar() {
   return (
     <>
       <nav className={navStyles.navContainer}>
-          <div className={navStyles.navTitle}>
-            <Link to='/'>
-              <img src={logo} alt="" className={navStyles.navLogo} />
-            </Link>
-          </div>
+        <div className={navStyles.navTitle}>
+          <Link to="/">
+            <img src={logo} alt="" className={navStyles.navLogo} />
+          </Link>
+        </div>
         <div className={navStyles.navUlWrapper}>
           <ul className={navStyles.navUl}>
-            <Link to='/'>
-              <button className={navStyles.navLink}>Home</button>
+            <Link to="/" className={navStyles.navLink}>
+              Home
             </Link>
             <button className={navStyles.navLink}>Dermalocia</button>
             <button className={navStyles.navLink}>Haircare</button>
             <button className={navStyles.navLink}>Gift Vouchers</button>
-            <button className={navStyles.navLink}>Price List</button>
+            <Link to="/services-price" className={navStyles.navLink}>
+              Price List
+            </Link>
             <button className={navStyles.navLink}>Book Now</button>
             <button className={navStyles.navLink}>Contact</button>
           </ul>

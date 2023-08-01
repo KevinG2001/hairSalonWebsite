@@ -7,6 +7,7 @@ import Dermalogica from "./components/Products/Dermalogica";
 import BrandedProducts from "./components/Products/BrandedProducts";
 import StylingProduct from "./components/Products/StylingProduct";
 import Haircare from "./components/Products/Haircare";
+import PriceTables from "./components/PriceTables";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/category/dermalogica" element={<Dermalogica />} />
           <Route path="/category/haircare" element={<Haircare />} />
           <Route path="/category/:brand" element={<BrandedProducts />} />
+          <Route path="/services-price" element={<PriceTables />} />
         </Routes>
       </div>
     </Router>

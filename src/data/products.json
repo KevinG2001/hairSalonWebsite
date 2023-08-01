@@ -143,6 +143,18 @@
       "description": "",
       "image": "/src/assets/products/Illuminating low shampoo.webp",
       "quantity": 1
+    },
+    {
+      "name": "Extraordinary all-in-one fluid",
+      "milliliter": "",
+      "id": 13,
+      "brand": "semi di lino",
+      "category": "haircare",
+      "date": "2023-01-15",
+      "price": "45.00",
+      "description": "",
+      "image": "/src/assets/products/Extraordinary all-in-one fluid.webp",
+      "quantity": 1
     }
   ]
 }
