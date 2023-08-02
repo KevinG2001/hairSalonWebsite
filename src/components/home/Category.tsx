@@ -5,7 +5,9 @@ import { Link } from "react-router-dom";
 import { Product } from "../../types/producyTypes";
 
 function filterUniqueCategorys(products: Product[]): string[] {
-  const uniqueCategories = Array.from(new Set(products.map((product) => product.category)));
+  const uniqueCategories = Array.from(
+    new Set(products.map((product) => product.category))
+  );
   return uniqueCategories;
 }
 
@@ -20,7 +22,11 @@ function Category() {
           {uniqueCategories.map((category) => (
             <Link to={`/category/${category}`} key={category}>
               <div className={catStyles.catOption} id={catStyles.giftset}>
-                <img src={`/src/assets/category/${category}.webp`} alt="" className={catStyles.catImg} />
+                <img
+                  src={`/src/assets/category/${category}.webp`}
+                  alt=""
+                  className={catStyles.catImg}
+                />
                 <button>{category}</button>
               </div>
             </Link>

@@ -3,7 +3,7 @@ import BrandStyling from "../../styling/brandStyling.module.scss";
 import Navbar from "../global/Navbar";
 import productData from "../../data/products.json";
 import { Product } from "../../types/producyTypes";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 function filterProductsByBrand(products: Product[]): Product[] {
   const haircareProducts = products.filter(
@@ -18,6 +18,7 @@ function filterProductsByBrand(products: Product[]): Product[] {
 }
 
 function Haircare() {
+  const { category } = useParams();
   const haircareProducts = productData.products;
   const haircareBrands = filterProductsByBrand(haircareProducts);
 
@@ -34,7 +35,7 @@ function Haircare() {
                   alt="Img"
                   className={BrandStyling.BrandImg}
                 />
-                <Link to={`/category/${brand}`}>
+                <Link to={`/category/${category}/${brand}`}>
                   <button className={BrandStyling.Btn}>{brand}</button>
                 </Link>
               </div>

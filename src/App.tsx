@@ -4,7 +4,7 @@ import Home from "./components/Home";
 import ProductDetails from "./components/Products/ProductDetails";
 import AllProductFrame from "./components/AllProductFrame";
 import Dermalogica from "./components/Products/Dermalogica";
-import BrandedProducts from "./components/Products/BrandedProducts";
+import BrandedProducts from "./components/Products/DisplayProductsFromBrand";
 import StylingProduct from "./components/Products/StylingProduct";
 import Haircare from "./components/Products/Haircare";
 import PriceTables from "./components/PriceTables";
@@ -18,8 +18,11 @@ function App() {
           <Route path="/products/:productname" element={<ProductDetails />} />
           <Route path="/products" element={<AllProductFrame />} />
           <Route path="/category/dermalogica" element={<Dermalogica />} />
-          <Route path="/category/haircare" element={<Haircare />} />
-          <Route path="/category/:brand" element={<BrandedProducts />} />
+          <Route path="/category/:category" element={<Haircare />} />
+          <Route
+            path="/category/:category/:brand"
+            element={<BrandedProducts />}
+          />
           <Route path="/services-price" element={<PriceTables />} />
         </Routes>
       </div>
