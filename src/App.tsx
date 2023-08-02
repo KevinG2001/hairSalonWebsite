@@ -17,7 +17,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/products/:productname" element={<ProductDetails />} />
           <Route path="/products" element={<AllProductFrame />} />
-          <Route path="/category/dermalogica" element={<Dermalogica />} />
+          <Route path="/category/:catecory" element={<Dermalogica />} />
           <Route path="/category/:category" element={<Haircare />} />
           <Route
             path="/category/:category/:brand"

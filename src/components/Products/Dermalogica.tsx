@@ -3,7 +3,7 @@ import BrandStyling from "../../styling/brandStyling.module.scss";
 import Navbar from "../global/Navbar";
 import productData from "../../data/products.json";
 import { Product } from "../../types/producyTypes";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 function filterProductsByBrand(products: Product[]): Product[] {
   const dermalogicaProducts = products.filter(
@@ -18,6 +18,7 @@ function filterProductsByBrand(products: Product[]): Product[] {
 }
 
 function Dermalgocia() {
+  const { category } = useParams();
   const dermalogicaProducts = productData.products;
   const dermalogicaBrands = filterProductsByBrand(dermalogicaProducts);
 
@@ -34,7 +35,7 @@ function Dermalgocia() {
                   alt="Img"
                   className={BrandStyling.BrandImg}
                 />
-                <Link to={`/category/${brand}`}>
+                <Link to={`/category/${category}/${brand}`}>
                   <button className={BrandStyling.Btn}>{brand}</button>
                 </Link>
               </div>
