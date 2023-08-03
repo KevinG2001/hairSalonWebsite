@@ -1,10 +1,10 @@
 import React from "react";
 import brandedStyles from "../../styling/productStyling.module.scss";
-import { Link, useParams } from "react-router-dom";
 import productData from "../../data/products.json";
+import { Link, useParams } from "react-router-dom";
 import Navbar from "../global/Navbar";
 
-const BrandedProducts = () => {
+const DisplayBrands = () => {
   const { brand } = useParams();
   const filteredProducts = productData.products.filter(
     (product) => product.brand === brand
@@ -46,4 +46,4 @@ const BrandedProducts = () => {
   );
 };
 
-export default BrandedProducts;
+export default DisplayBrands;
