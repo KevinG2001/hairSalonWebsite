@@ -27,7 +27,7 @@ const BrandedProducts = () => {
                   alt="Img"
                   className={brandedStyles.BrandImg}
                 />
-                <Link to={`${category}/${brand}`}>
+                <Link to={`${brand}`}>
                   <button className={brandedStyles.Btn}>{brand}</button>
                 </Link>
               </div>
