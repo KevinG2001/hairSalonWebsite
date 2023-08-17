@@ -20,7 +20,7 @@ function Category() {
       <div className={catStyles.catContainer}>
         <div className={catStyles.cateBox}>
           {uniqueCategories.map((category) => (
-            <Link to={`/category/${category}`} key={category}>
+            <Link to={`${category}`} key={category}>
               <div className={catStyles.catOption} id={catStyles.giftset}>
                 <img
                   src={`/src/assets/category/${category}.webp`}
