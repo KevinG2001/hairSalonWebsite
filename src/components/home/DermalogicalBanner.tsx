@@ -1,4 +1,3 @@
-import React from 'react'
 import dermoBanStyle from "../../styling/DermalogicalBannerStyles.module.scss"
 
 function DermalogicalBanner() {

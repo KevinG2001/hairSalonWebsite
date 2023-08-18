@@ -1,4 +1,3 @@
-import React from "react";
 import catStyles from "../../styling/categoryStyles.module.scss";
 import productData from "../../data/products.json";
 import { Link } from "react-router-dom";
