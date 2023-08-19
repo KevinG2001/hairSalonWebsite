@@ -1,4 +1,3 @@
-import React from "react";
 import BrandStyling from "../../styling/brandStyling.module.scss";
 import Navbar from "../global/Navbar";
 import productData from "../../data/products.json";
@@ -36,7 +35,7 @@ function Dermalgocia() {
                   className={BrandStyling.BrandImg}
                 />
                 <Link to={`/category/${category}/${brand}`}>
-                  <button className={BrandStyling.Btn}>{brand}</button>
+                  <button className={BrandStyling.Btn}>{brand.brand}</button>
                 </Link>
               </div>
             </>

@@ -1,4 +1,3 @@
-import React from "react";
 import priceStyling from "../../styling/priceStyling.module.scss";
 
 function HairPrice() {

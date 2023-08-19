@@ -1,4 +1,3 @@
-import React from "react";
 import { useParams } from "react-router-dom";
 import productData from "../../data/products.json";
 import productDetailStyling from "../../styling/productDetailsStyling.module.scss";

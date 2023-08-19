@@ -1,4 +1,3 @@
-import React from "react";
 import brandedStyles from "../../styling/BrandStyling.module.scss";
 import { Link, useParams } from "react-router-dom";
 import productData from "../../data/products.json";
