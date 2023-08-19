@@ -1,4 +1,3 @@
-import React from "react";
 import productStyling from "../../styling/productStyling.module.scss";
 import productData from "../../data/products.json";
 import { Product } from "../../types/producyTypes";

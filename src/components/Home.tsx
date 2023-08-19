@@ -1,6 +1,4 @@
-import React from "react";
 import Category from "./home/Category";
-import Allproducts from "./Products/AllProducts";
 import Navbar from "./global/Navbar";
 import Footer from "./global/Footer";
 import Slideshow from "./home/Slideshow";

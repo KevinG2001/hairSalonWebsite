@@ -1,4 +1,3 @@
-import React from 'react'
 import Navbar from './global/Navbar'
 import AllProducts from './Products/AllProducts'
 
