@@ -22,8 +22,8 @@ const BrandedProducts = () => {
               <>
               <div className={brandedStyles.Card} key={brand}>
                 <img
-                  src={`../../assets/category/brands/${brand}.webp`}
-                  alt="Img"
+                  src={`/assets/category/brands/${brand}.webp`}
+                  alt="Brand Imgs"
                   className={brandedStyles.BrandImg}
                 />
                 <Link to={`${brand}`}>
