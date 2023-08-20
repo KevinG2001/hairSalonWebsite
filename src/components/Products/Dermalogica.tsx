@@ -30,7 +30,7 @@ function Dermalgocia() {
             <>
               <div className={BrandStyling.Card} key={brand.id}>
                 <img
-                  src={`../assets/category/brands/${brand}.webp`}
+                  src={`../../assets/category/brands/${brand}.webp`}
                   alt="Img"
                   className={BrandStyling.BrandImg}
                 />
