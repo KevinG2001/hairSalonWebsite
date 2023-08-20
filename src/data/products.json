@@ -9,7 +9,7 @@
       "date": "2023-01-15",
       "price": "42.00",
       "description": "",
-      "image": "/src/assets/products/UltracalmingCleanser.webp",
+      "image": "../assets/products/UltracalmingCleanser.webp",
       "quantity": 1
     },
     {
@@ -21,7 +21,7 @@
       "date": "10/12/2022",
       "price": "24.00",
       "description": "",
-      "image": "/src/assets/products/UltracalmingSerumConcentrate.webp",
+      "image": "../../assets/products/UltracalmingSerumConcentrate.webp",
       "quantity": 0
     },
     {
