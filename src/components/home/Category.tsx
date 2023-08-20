@@ -22,7 +22,7 @@ function Category() {
             <Link to={`${category}`} key={category}>
               <div className={catStyles.catOption} id={catStyles.giftset}>
                 <img
-                  src={`./assets/category/${category}.webp`}
+                  src={`/assets/category/${category}.webp`}
                   alt="Category Images"
                   className={catStyles.catImg}
                 />

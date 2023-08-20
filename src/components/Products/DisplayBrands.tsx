@@ -22,7 +22,7 @@ const BrandedProducts = () => {
               <>
               <div className={brandedStyles.Card} key={brand}>
                 <img
-                  src={`/assets/category/brands/${brand}.webp`}
+                  src={`../assets/category/brands/${brand}.webp`}
                   alt="Brand Imgs"
                   className={brandedStyles.BrandImg}
                 />
