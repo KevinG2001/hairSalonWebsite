@@ -1,9 +1,9 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Home from "./components/Home";
+import Home from "./components/HomeFrame";
 import ProductDetails from "./components/Products/ProductDetails";
 import AllProductFrame from "./components/AllProductFrame";
 import BrandedProducts from "./components/Products/DisplayProducts";
-import PriceTables from "./components/PriceTables";
+import PriceTables from "./components/PriceTablesFrame";
 import DisplayProductsBranded from "./components/Products/DisplayProductsByBrand";
 
 function App() {

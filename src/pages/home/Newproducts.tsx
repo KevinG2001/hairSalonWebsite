@@ -1,6 +1,6 @@
-import productStyling from "../../../styling/productStyling.module.scss";
-import productData from "../../../data/products.json";
-import { Product } from "../../../types/producyTypes";
+import productStyling from "../../styling/productStyling.module.scss";
+import productData from "../../data/products.json";
+import { Product } from "../../types/producyTypes";
 import { Link } from "react-router-dom";
 
 function filterByLastEigthProducts(products: Product[]): Product[] {

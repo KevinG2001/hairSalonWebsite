@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import slideStyles from "../../../styling/slideStyles.module.scss";
-import leftArrow from "../../../assets/arrow-left.svg";
-import rightArrow from "../../../assets/arrow-right.svg";
+import slideStyles from "../../styling/slideStyles.module.scss";
+import leftArrow from "../../assets/arrow-left.svg";
+import rightArrow from "../../assets/arrow-right.svg";
 import { Link } from "react-router-dom";
 
 const images = [
