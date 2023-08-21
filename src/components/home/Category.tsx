@@ -22,8 +22,8 @@ function Category() {
             <Link to={`${category}`} key={category}>
               <div className={catStyles.catOption} id={catStyles.giftset}>
                 <img
-                  src={`/assets/category/${category}.webp`}
-                  alt="Category Images"
+                  src={`/../../assets/category/${category}.webp`}
+                  alt="Category"
                   className={catStyles.catImg}
                 />
                 <button>{category}</button>
