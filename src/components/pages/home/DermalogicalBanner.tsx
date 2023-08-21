@@ -1,4 +1,4 @@
-import dermoBanStyle from "../../styling/DermalogicalBannerStyles.module.scss"
+import dermoBanStyle from "../../../styling/DermalogicalBannerStyles.module.scss"
 
 function DermalogicalBanner() {
   return (

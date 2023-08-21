@@ -1,7 +1,7 @@
-import catStyles from "../../styling/categoryStyles.module.scss";
-import productData from "../../data/products.json";
+import catStyles from "../../../styling/categoryStyles.module.scss";
+import productData from "../../../data/products.json";
 import { Link } from "react-router-dom";
-import { Product } from "../../types/producyTypes";
+import { Product } from "../../../types/producyTypes";
 
 function filterUniqueCategorys(products: Product[]): string[] {
   const uniqueCategories = Array.from(

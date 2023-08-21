@@ -1,22 +1,8 @@
-import productStyling from "../../styling/productStyling.module.scss";
-import productData from "../../data/products.json";
-import { Product } from "../../types/producyTypes";
+import productStyling from "../../../styling/productStyling.module.scss";
+import productData from "../../../data/products.json";
+import { Product } from "../../../types/producyTypes";
 import { Link } from "react-router-dom";
 
-//Function that shows the products that were adding in the last 6 months
-
-// function filterProductsByDate(products: Product[]): Product[] {
-//   const currentDate = new Date();
-//   const sixMonthsAgo = new Date();
-//   sixMonthsAgo.setMonth(sixMonthsAgo.getMonth() - 6);
-
-//   return products.filter((product: Product) => {
-//     const productDate = new Date(product.date);
-//     return productDate >= sixMonthsAgo && productDate <= currentDate;
-//   });
-// }
-
-//Function only shows the last 8 products in the json array
 function filterByLastEigthProducts(products: Product[]): Product[] {
   const lastProductIndex = productData.products.length - 1; //Variable to get the last index
   const startIndex = Math.max(lastProductIndex - 7, 0); //Variable to get the starting index
