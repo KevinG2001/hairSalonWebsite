@@ -1,7 +1,7 @@
-import Styles from "../../styling/BrandStyling.module.scss";
+import Styles from "../styling/BrandStyling.module.scss";
 import { Link, useParams } from "react-router-dom";
-import productData from "../../data/products.json";
-import Navbar from "../global/Navbar";
+import productData from "../data/products.json";
+import Navbar from "./global/Navbar";
 
 
 // This component is used at the link website/category (category = whatever you clicked on dermalogica, haircare etc.)

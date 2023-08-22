@@ -1,7 +1,7 @@
-import brandedStyles from "../../styling/productStyling.module.scss";
-import productData from "../../data/products.json";
+import brandedStyles from "../styling/productStyling.module.scss";
+import productData from "./../data/products.json";
 import { Link, useParams } from "react-router-dom";
-import Navbar from "../global/Navbar";
+import Navbar from "./global/Navbar";
 
 // This component displays the products at the link of website/category/brand (brand being what ever you clicked on).
 // It goes by brand, It only shows the products by brand

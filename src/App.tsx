@@ -1,10 +1,10 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./pages/HomeFrame";
-import ProductDetails from "./components/Products/ProductDetails";
+import ProductDetails from "./components/ProductDetails";
 import AllProductFrame from "./pages/AllProductFrame";
-import DisplayBrands from "./components/Products/DisplayBrands";
+import DisplayBrands from "./components/DisplayBrands";
 import PriceTables from "./pages/PriceTablesFrame";
-import DisplayProductsBranded from "./components/Products/DisplayProductsByBrand";
+import DisplayProductsBranded from "./components/DisplayProductsByBrand";
 
 function App() {
   return (
