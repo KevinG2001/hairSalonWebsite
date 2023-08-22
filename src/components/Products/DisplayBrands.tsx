@@ -1,9 +1,11 @@
-import brandedStyles from "../../styling/BrandStyling.module.scss";
+import Styles from "../../styling/BrandStyling.module.scss";
 import { Link, useParams } from "react-router-dom";
 import productData from "../../data/products.json";
 import Navbar from "../global/Navbar";
 
-const BrandedProducts = () => {
+
+// This component is used at the link website/category (category = whatever you clicked on dermalogica, haircare etc.)
+const DisplayBrands = () => {
   const {category} = useParams();
 
   const filteredProducts = productData.products.filter(
@@ -14,20 +16,20 @@ const BrandedProducts = () => {
   return (
     <>
       <Navbar />
-      <div className={brandedStyles.Wrapper}>
-        <div className={brandedStyles.CardWrapper}>
+      <div className={Styles.Wrapper}>
+        <div className={Styles.CardWrapper}>
           {uniqueBrands.map((brand) => (
-          <div className={brandedStyles.CardHolder}>
+          <div className={Styles.CardHolder}>
             
               <>
-              <div className={brandedStyles.Card} key={brand}>
+              <div className={Styles.Card} key={brand}>
                 <img
                   src={`/src/assets/category/brands/${brand}.webp`}
                   alt="Img"
-                  className={brandedStyles.BrandImg}
+                  className={Styles.BrandImg}
                 />
                 <Link to={`${brand}`}>
-                  <button className={brandedStyles.Btn}>{brand}</button>
+                  <button className={Styles.Btn}>{brand}</button>
                 </Link>
               </div>
             </>
@@ -40,4 +42,4 @@ const BrandedProducts = () => {
   );
 };
 
-export default BrandedProducts;
+export default DisplayBrands;

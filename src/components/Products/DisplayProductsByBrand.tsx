@@ -3,7 +3,10 @@ import productData from "../../data/products.json";
 import { Link, useParams } from "react-router-dom";
 import Navbar from "../global/Navbar";
 
-const DisplayBrands = () => {
+// This component displays the products at the link of website/category/brand (brand being what ever you clicked on).
+// It goes by brand, It only shows the products by brand
+
+const DisplayProducts = () => {
   const { brand } = useParams();
   const filteredProducts = productData.products.filter(
     (product) => product.brand === brand
@@ -45,4 +48,4 @@ const DisplayBrands = () => {
   );
 };
 
-export default DisplayBrands;
+export default DisplayProducts;

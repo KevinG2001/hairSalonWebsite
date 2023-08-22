@@ -1,6 +1,6 @@
 import priceStyling from "../styling/priceStyling.module.scss";
-import Navbar from "./global/Navbar";
-import HairPrice from "./price/HairPrice";
+import Navbar from "../components/global/Navbar";
+import HairPrice from "../components/price/HairPrice";
 
 function PriceTables() {
   return (
