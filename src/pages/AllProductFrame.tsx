@@ -1,5 +1,5 @@
-import Navbar from './global/Navbar'
-import AllProducts from './Products/AllProducts'
+import Navbar from '../components/global/Navbar'
+import AllProducts from './allproducts/AllProducts'
 
 function AllProductFrame() {
   return (

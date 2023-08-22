@@ -1,10 +1,10 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Home from "./components/Home";
-import ProductDetails from "./components/Products/ProductDetails";
-import AllProductFrame from "./components/AllProductFrame";
-import BrandedProducts from "./components/Products/DisplayBrands";
-import PriceTables from "./components/PriceTables";
-import DisplayProductsBranded from "./components/Products/DisplayProductsByBrand";
+import Home from "./pages/HomeFrame";
+import ProductDetails from "./components/ProductDetails";
+import AllProductFrame from "./pages/AllProductFrame";
+import DisplayBrands from "./components/DisplayBrands";
+import PriceTables from "./pages/PriceTablesFrame";
+import DisplayProductsBranded from "./components/DisplayProductsByBrand";
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
           {/* Shows specific product details */}
           <Route path="/products/:productname" element={<ProductDetails />} />
           {/* Shows the brands of the categorys when a cateogyr is clicked on homepage */}
-          <Route path="/:category" element={<BrandedProducts />} />
+          <Route path="/:category" element={<DisplayBrands />} />
           {/* Shows the products from the brand that was clicked */}
           <Route
             path="/:category/:brand"
