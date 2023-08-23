@@ -3,30 +3,38 @@ import productData from "../../data/products.json";
 import { Link } from "react-router-dom";
 import { Product } from "../../types/producyTypes";
 
-function filterUniqueCategorys(products: Product[]): string[] {
-  const uniqueCategories = Array.from(
-    new Set(products.map((product) => product.category))
+function filterUniqueCategoryImgs(products: Product[]): { category: string, categoryImg: string }[] {
+  const uniqueCategoryImgs = Array.from(
+    new Set(products.map((product) => product.categoryImg))
   );
-  return uniqueCategories;
+
+  // Create an array of objects with category and categoryImg
+  return uniqueCategoryImgs.map((categoryImg) => {
+    const productWithCategoryImg = products.find(product => product.categoryImg === categoryImg);
+    return {
+      category: productWithCategoryImg ? productWithCategoryImg.category : "",
+      categoryImg: categoryImg
+    };
+  });
 }
 
 function Category() {
   const products = productData.products;
-  const uniqueCategories = filterUniqueCategorys(products);
+  const uniqueCategories = filterUniqueCategoryImgs(products);
 
   return (
     <>
       <div className={catStyles.catContainer}>
         <div className={catStyles.cateBox}>
           {uniqueCategories.map((category) => (
-            <Link to={`${category}`} key={category}>
+            <Link to={`${category}`} key={category.category}>
               <div className={catStyles.catOption} id={catStyles.giftset}>
                 <img
-                  src={`public/assets/category/${category}.webp`}
+                  src={category.categoryImg}
                   alt="Category Image"
                   className={catStyles.catImg}
                 />
-                <button>{category}</button>
+                <button>{category.category}</button>
               </div>
             </Link>
           ))}
