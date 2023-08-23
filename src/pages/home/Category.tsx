@@ -10,10 +10,6 @@ function filterUniqueCategorys(products: Product[]): string[] {
   return uniqueCategories;
 }
 
-function getCategoryImg(category: string) {
-  return new URL(`../../assets/category/${category}.webp`, import.meta.url).href;
-}
-
 function Category() {
   const products = productData.products;
   const uniqueCategories = filterUniqueCategorys(products);
@@ -26,7 +22,7 @@ function Category() {
             <Link to={`${category}`} key={category}>
               <div className={catStyles.catOption} id={catStyles.giftset}>
                 <img
-                  src={getCategoryImg(category)}
+                  src={`public/assets/category/${category}.webp`}
                   alt="Category Image"
                   className={catStyles.catImg}
                 />
