@@ -10,7 +10,11 @@
       "date": "2023-01-15",
       "price": "42.00",
       "description": "",
+
       "image": "../../assets/products/UltracalmingCleanser.webp",
+=======
+      "image": "../assets/products/UltracalmingCleanser.webp",
+
       "quantity": 1
     },
     {
@@ -24,6 +28,8 @@
       "price": "24.00",
       "description": "",
       "image": "../../assets/products/UltracalmingSerumConcentrate.webp",
+=======
+      "image": "../assets/products/UltracalmingSerumConcentrate.webp",
       "quantity": 0
     },
     {
@@ -37,6 +43,7 @@
       "price": "30.00",
       "description": "",
       "image": "../../assets/products/CalmWaterGel.webp",
+      "image": "../assets/products/CalmWaterGel.webp",
       "quantity": 1
     },
     {
@@ -50,6 +57,7 @@
       "price": null,
       "description": "",
       "image": "../../assets/products/BarrierDefenseBooster.webp",
+      "image": "../assets/products/BarrierDefenseBooster.webp",
       "quantity": 1
     },
     {
@@ -63,6 +71,7 @@
       "price": null,
       "description": "",
       "image": "../../assets/products/DynamicSkinRecoveryspf50.webp",
+      "image": "../assets/products/DynamicSkinRecoveryspf50.webp",
       "quantity": 1
     },
     {
@@ -76,6 +85,7 @@
       "price": null,
       "description": "",
       "image": "../../assets/products/DailySuperfoliant.webp",
+      "image": "../assets/products/DailySuperfoliant.webp",
       "quantity": 1
     },
     {
@@ -89,6 +99,7 @@
       "price": null,
       "description": "",
       "image": "../../assets/products/MultivitaminPowerRecoveryMasque.webp",
+      "image": "../assets/products/MultivitaminPowerRecoveryMasque.webp",
       "quantity": 1
     },
     {
@@ -102,6 +113,7 @@
       "price": null,
       "description": "",
       "image": "../../assets/products/SpecialCleansingGel.webp",
+      "image": "../assets/products/SpecialCleansingGel.webp",
       "quantity": 1
     },
     {
@@ -115,6 +127,7 @@
       "price": "24.00",
       "description": "",
       "image": "../../assets/products/SkinSmoothingCream.webp",
+      "image": "../assets/products/SkinSmoothingCream.webp",
       "quantity": 1
     },
     {
@@ -128,6 +141,7 @@
       "price": "45.00",
       "description": "",
       "image": "../../assets/products/clearingskinwash.webp",
+      "image": "../assets/products/clearingskinwash.webp",
       "quantity": 1
     },
     {
@@ -141,6 +155,11 @@
       "price": "45.00",
       "description": "",
       "image": "../../assets/products/Hair Perfector.webp",
+      "categoryImg": "https://www.debonairhairandbeauty.ie/site/uploads/categories/haircare-image2.webp",
+      "date": "2023-01-15",
+      "price": "45.00",
+      "description": "",
+      "image": "../assets/products/Hair Perfector.webp",
       "quantity": 1
     },
     {
@@ -154,6 +173,7 @@
       "price": "45.00",
       "description": "",
       "image": "../../assets/products/Illuminating low shampoo.webp",
+      "image": "../assets/products/Illuminating low shampoo.webp",
       "quantity": 1
     },
     {
@@ -167,6 +187,7 @@
       "price": "45.00",
       "description": "",
       "image": "../../assets/products/Extraordinary all-in-one fluid.webp",
+      "image": "../assets/products/Extraordinary all-in-one fluid.webp",
       "quantity": 1
     },
     {
@@ -180,6 +201,7 @@
       "price": "45.00",
       "description": "",
       "image": "../../assets/products/Australia Blonde Trio Set.webp",
+      "image": "../assets/products/Australia Blonde Trio Set.webp",
       "quantity": 1
     }
   ]

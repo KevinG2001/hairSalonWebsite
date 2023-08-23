@@ -1,5 +1,5 @@
 {
-  "home": "http://keving2001.github.io/hairsalonwebsite",
+  "homepage": ".",
   "name": "hairsalon",
   "private": true,
   "version": "0.0.0",
@@ -9,8 +9,7 @@
     "build": "tsc && vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "predeploy": "npm run build"
   },
   "dependencies": {
     "i": "^0.3.7",
