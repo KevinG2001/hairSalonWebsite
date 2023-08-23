@@ -20,7 +20,6 @@ function Navbar() {
             <Link to="/" className={navStyles.navLink}>
               Home
             </Link>
-            <button className={navStyles.navLink}>Dermalocia</button>
             <button className={navStyles.navLink}>Haircare</button>
             <button className={navStyles.navLink}>Gift Vouchers</button>
             <Link to="/services-price" className={navStyles.navLink}>
