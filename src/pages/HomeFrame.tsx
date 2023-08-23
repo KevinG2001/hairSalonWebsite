@@ -8,7 +8,7 @@ import Newproducts from "../pages/home/Newproducts";
 function Home() {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <Slideshow />
       <Category />
       <DermalogicalBanner />
