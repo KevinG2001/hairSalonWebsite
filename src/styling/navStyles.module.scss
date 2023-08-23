@@ -79,5 +79,45 @@
 }
 
 @media (max-width: 768px) {
+  .navContainer {
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Distribute items evenly */
+    height: auto; /* Allow container to expand with content */
+    padding: 10px; /* Add padding for better spacing */
+  }
 
+  .navLogo {
+    margin: 10px auto; /* Center the logo */
+  }
+
+  .navUlWrapper {
+    width: 100%; /* Full width for navigation items */
+    margin-top: 20px; /* Add some spacing from the logo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navUl {
+    flex-direction: column; /* Stack navigation items vertically */
+    margin: 0;
+    align-items: center;
+    padding: 0;
+  }
+
+  .navLink {
+    margin: 5px 0; /* Adjust spacing between items */
+    font-size: 16px; /* Reduce font size for smaller screens */
+  }
+
+  .navSocials {
+    border-top: 2px solid white;
+    padding-top: 5px;
+    justify-content: space-between; /* Center social icons */
+    margin: 0;
+  }
+
+  .navSocailImg{
+    margin: 5px;
+  }
 }
