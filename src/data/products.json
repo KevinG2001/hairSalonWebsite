@@ -6,10 +6,11 @@
       "id": 1,
       "brand": "Ultra-Calming",
       "category": "Dermalogica",
+      "categoryImg": "../assets/category/Dermalogica.webp",
       "date": "2023-01-15",
       "price": "42.00",
       "description": "",
-      "image": "../assets/products/UltracalmingCleanser.webp",
+      "image": "../../assets/products/UltracalmingCleanser.webp",
       "quantity": 1
     },
     {
@@ -18,10 +19,11 @@
       "id": 2,
       "brand": "Ultra-Calming",
       "category": "Dermalogica",
+      "categoryImg": "/../assets/category/Dermalogica.webp",
       "date": "10/12/2022",
       "price": "24.00",
       "description": "",
-      "image": "../assets/products/UltracalmingSerumConcentrate.webp",
+      "image": "../../assets/products/UltracalmingSerumConcentrate.webp",
       "quantity": 0
     },
     {
@@ -30,10 +32,11 @@
       "id": 3,
       "brand": "Ultra-Calming",
       "category": "Dermalogica",
+      "categoryImg": "src/assets/category/Dermalogica.webp",
       "date": "2023-01-15",
       "price": "30.00",
       "description": "",
-      "image": "../assets/products/CalmWaterGel.webp",
+      "image": "../../assets/products/CalmWaterGel.webp",
       "quantity": 1
     },
     {
@@ -42,10 +45,11 @@
       "id": 4,
       "brand": "Ultra-Calming",
       "category": "Dermalogica",
+      "categoryImg": "/src/assets/category/Dermalogica.webp",
       "date": "",
       "price": null,
       "description": "",
-      "image": "../assets/products/BarrierDefenseBooster.webp",
+      "image": "../../assets/products/BarrierDefenseBooster.webp",
       "quantity": 1
     },
     {
@@ -54,10 +58,11 @@
       "id": 5,
       "brand": "Age Smart",
       "category": "Dermalogica",
+      "categoryImg": "../../assets/category/Dermalogica.webp",
       "date": "",
       "price": null,
       "description": "",
-      "image": "../assets/products/DynamicSkinRecoveryspf50.webp",
+      "image": "../../assets/products/DynamicSkinRecoveryspf50.webp",
       "quantity": 1
     },
     {
@@ -66,10 +71,11 @@
       "id": 6,
       "brand": "Age Smart",
       "category": "Dermalogica",
+      "categoryImg": "../../assets/category/Dermalogica.webp",
       "date": "",
       "price": null,
       "description": "",
-      "image": "../assets/products/DailySuperfoliant.webp",
+      "image": "../../assets/products/DailySuperfoliant.webp",
       "quantity": 1
     },
     {
@@ -78,10 +84,11 @@
       "id": 7,
       "brand": "Age Smart",
       "category": "Dermalogica",
+      "categoryImg": "../../assets/category/Dermalogica.webp",
       "date": "",
       "price": null,
       "description": "",
-      "image": "../assets/products/MultivitaminPowerRecoveryMasque.webp",
+      "image": "../../assets/products/MultivitaminPowerRecoveryMasque.webp",
       "quantity": 1
     },
     {
@@ -90,10 +97,11 @@
       "id": 8,
       "brand": "Daily Skin Health",
       "category": "Dermalogica",
+      "categoryImg": "../../assets/category/Dermalogica.webp",
       "date": "",
       "price": null,
       "description": "",
-      "image": "../assets/products/SpecialCleansingGel.webp",
+      "image": "../../assets/products/SpecialCleansingGel.webp",
       "quantity": 1
     },
     {
@@ -102,10 +110,11 @@
       "id": 9,
       "brand": "Daily Skin Health",
       "category": "Dermalogica",
+      "categoryImg": "../../assets/category/Dermalogica.webp",
       "date": "2023-01-15",
       "price": "24.00",
       "description": "",
-      "image": "../assets/products/SkinSmoothingCream.webp",
+      "image": "../../assets/products/SkinSmoothingCream.webp",
       "quantity": 1
     },
     {
@@ -114,10 +123,11 @@
       "id": 10,
       "brand": "Active Clearing",
       "category": "Dermalogica",
+      "categoryImg": "../../assets/category/Dermalogica.webp",
       "date": "2023-01-15",
       "price": "45.00",
       "description": "",
-      "image": "../assets/products/clearingskinwash.webp",
+      "image": "../../assets/products/clearingskinwash.webp",
       "quantity": 1
     },
     {
@@ -126,11 +136,15 @@
       "id": 11,
       "brand": "Olaplex",
       "category": "Haircare",
+      "categoryImg": "../../assets/category/Haircare.webp",
+      "date": "2023-01-15",
+      "price": "45.00",
+      "description": "",
+      "image": "../../assets/products/Hair Perfector.webp",
       "categoryImg": "https://www.debonairhairandbeauty.ie/site/uploads/categories/haircare-image2.webp",
       "date": "2023-01-15",
       "price": "45.00",
       "description": "",
-      "image": "../assets/products/Hair Perfector.webp",
       "quantity": 1
     },
     {
@@ -139,10 +153,11 @@
       "id": 12,
       "brand": "Semi Di Lino",
       "category": "Haircare",
+      "categoryImg": "../../assets/category/Haircare.webp",
       "date": "2023-01-15",
       "price": "45.00",
       "description": "",
-      "image": "../assets/products/Illuminating low shampoo.webp",
+      "image": "../../assets/products/Illuminating low shampoo.webp",
       "quantity": 1
     },
     {
@@ -151,10 +166,12 @@
       "id": 13,
       "brand": "Semi Di Lino",
       "category": "Styling Products",
+      "categoryImg": "../../assets/category/Styling Products.webp",
       "date": "2023-01-15",
       "price": "45.00",
       "description": "",
-      "image": "../assets/products/Extraordinary all-in-one fluid.webp",
+      "image": "../../assets/products/Extraordinary all-in-one fluid.webp",
+
       "quantity": 1
     },
     {
@@ -163,10 +180,11 @@
       "id": 14,
       "brand": "Eleven",
       "category": "Giftset",
+      "categoryImg": "/src/assets/category/Giftset.webp",
       "date": "2023-01-15",
       "price": "45.00",
       "description": "",
-      "image": "../assets/products/Australia Blonde Trio Set.webp",
+      "image": "../../assets/products/Australia Blonde Trio Set.webp",
       "quantity": 1
     }
   ]
