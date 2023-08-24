@@ -141,6 +141,10 @@
       "price": "45.00",
       "description": "",
       "image": "../../assets/products/Hair Perfector.webp",
+      "categoryImg": "https://www.debonairhairandbeauty.ie/site/uploads/categories/haircare-image2.webp",
+      "date": "2023-01-15",
+      "price": "45.00",
+      "description": "",
       "quantity": 1
     },
     {
@@ -167,6 +171,7 @@
       "price": "45.00",
       "description": "",
       "image": "../../assets/products/Extraordinary all-in-one fluid.webp",
+
       "quantity": 1
     },
     {
