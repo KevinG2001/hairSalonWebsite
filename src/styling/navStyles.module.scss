@@ -83,7 +83,7 @@
     flex-direction: column; /* Stack items vertically */
     justify-content: center; /* Distribute items evenly */
     height: auto; /* Allow container to expand with content */
-    padding: 10px; /* Add padding for better spacing */
+    padding-bottom: 10px; /*Just adds spacing to the bottom of navbar*/
   }
 
   .navLogo {
