@@ -59,3 +59,36 @@
   background-color: $orangehighlight-colour;
   color: white;
 }
+
+@media (max-width: 1200px) {
+  .cateBox{
+    width: 1000px;
+    height: auto;
+  }
+  .catOption{
+    width: 220px;
+    height: 178px;
+  }
+}
+
+@media (max-width: 960px) {
+  .cateBox{
+    width: 800px;
+    height: auto;
+  }
+  .catOption{
+    width: 176px;
+    height: 142px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cateBox{
+    width: 400px;
+    height: auto;
+  }
+  .catOption{
+    width: 145px;
+    height: 117px;
+  }
+}
