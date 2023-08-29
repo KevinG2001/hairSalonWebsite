@@ -6,12 +6,9 @@
   justify-content: center;
   align-items: center;
   background-color: black;
-  height: 300px;
+  height: 380px;
   width: 100%;
-  margin-top: 5%;
-}
-
-.footerContainer {
+  margin-top: 2%;
   color: $greyFont-colour;
 }
 
@@ -26,18 +23,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 2%;
-  margin-right: 2%;
-  margin-top: 2%;
-  width: 200px;
-  height: 125px;
-
+  margin: 2% 2% 2%;
+  width: 280px;
+  height: 350px;
+  justify-content: space-between;
   .footerTitle {
-    display: flex;
-    justify-content: center;
-    width: auto;
-    height: auto;
-    padding-top: 25px;
+    margin: 40px 0px 10px;
   }
 
   .footerContent {
@@ -54,6 +45,13 @@
       width: 35px;
     }
   }
+  .footerMenu{
+    flex-grow: 1;
+    text-align: center;
+  }
+  .footerContact{
+    text-align: center;
+  }
 }
 
 .footerContentPanel button {
@@ -61,23 +59,42 @@
   background-color: inherit;
   border-color: $orangehighlight-colour;
   border-radius: 10px;
-  font-size: 15px;
+  font-size: 16px;
+  padding: 14px 32px 14px 32px;
   color: $orangehighlight-colour;
-  width: 173px;
-  height: 40px;
   border-style: solid;
 }
 
-.footerContentPanel button:hover {
-  background-color: $orangehighlight-colour;
+.footerContentPanel button:hover {  
   cursor: pointer;
+  background-color: $orangehighlight-colour;
   color: white;
 }
 
-.footerContainer button {
-  margin-top: 45px;
+.footerLogo {
+  width: 100px;
 }
 
-.footerLogo {
-  width: 75px;
+@media (max-width: 1200px) {
+  
+}
+
+@media (max-width: 960px) {
+  
+}
+
+@media (max-width: 768px) {
+  #middle{
+    order: -1;
+  }
+  .footerContainer{
+    height: auto;
+  }
+  .footerContentPanel{
+    height: auto;
+    margin: 15% 0% 15%;
+  }
+  .footerContentWrapper{
+    flex-direction: column;
+  }
 }
