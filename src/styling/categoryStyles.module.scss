@@ -24,10 +24,10 @@
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  border-radius: 25px;
-
-  
+  border-radius: 25px;  
+  flex-grow: 1;
 }
+
 .catImg{
     width: inherit;
     height: inherit;
