@@ -153,10 +153,11 @@
 
   .Card {
     width: 145px;
+    flex-grow: 1;
     margin: 5px; 
   }
 
   .ProductImg{
-    height: auto;
+    width: 190px;
   }
 }
