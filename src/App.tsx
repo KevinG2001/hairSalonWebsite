@@ -5,11 +5,12 @@ import AllProductFrame from "./pages/AllProductFrame";
 import DisplayBrands from "./components/DisplayBrands";
 import PriceTables from "./pages/PriceTablesFrame";
 import DisplayProductsBranded from "./components/DisplayProductsByBrand";
+import styles from "./styling/AppStyling.module.scss";
 
 function App() {
   return (
     <Router>
-      <div className="mainApp">
+      <div className={styles.mainApp}>
         <Routes>
           <Route path="/" element={<Home />} />
           {/* Shows all products */}
