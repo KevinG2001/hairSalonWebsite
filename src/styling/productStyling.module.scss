@@ -43,6 +43,7 @@
   height: 410px;
   border-radius: 25px;
   margin: 5px 5px 5px 5px;
+  flex-grow: 1;
 }
 
 .Card:hover {
@@ -153,7 +154,6 @@
 
   .Card {
     width: 145px;
-    flex-grow: 1;
     margin: 5px; 
   }
 
