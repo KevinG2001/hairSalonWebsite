@@ -92,9 +92,18 @@
   }
   .footerContentPanel{
     height: auto;
-    margin: 15% 0% 15%;
+    margin-top: 1%;
   }
   .footerContentWrapper{
     flex-direction: column;
+  }
+  .FooterBtn{
+    margin: 10% 0% 10%;
+  }
+  .footerLogo{
+    margin: 5% 0% 5%;
+  }
+  .footerTitle{
+    margin: 5px;
   }
 }

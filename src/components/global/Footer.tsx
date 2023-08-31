@@ -13,7 +13,7 @@ function Footer() {
             <div className={footerStyles.footerMenu}>
               <div>Haircare</div>
             </div>
-            <button>Show all products</button>
+            <button className={footerStyles.FooterBtn}>Show all products</button>
           </div>
           <div className={footerStyles.footerContentPanel} id={footerStyles.middle}>
             <img src={logo} alt="" className={footerStyles.footerLogo}/>
@@ -44,7 +44,7 @@ function Footer() {
               <div>Dermalogica</div>
               <div>delivery & returns</div>
             </div>
-            <button>book now</button>
+            <button className={footerStyles.FooterBtn}>book now</button>
             </div>
         </div>
       </div>
