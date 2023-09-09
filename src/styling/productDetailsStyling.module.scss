@@ -5,8 +5,8 @@
   justify-content: center;
 }
 
-.detailWrapper2{
-  display: flex;  
+.detailWrapper2 {
+  display: flex;
   flex-direction: row;
   width: 1180px;
   height: 685px;
@@ -17,37 +17,35 @@
   height: 580px;
 }
 
-.detailContainer{
+.detailContainer {
   width: 580px;
 }
 
-.productHeading{
+.productHeading {
   height: 36px;
 }
 
-.productPrice{
+.productPrice {
   font-size: 26px;
 }
 
-.productCartOptions{
-
-  .productSpan{
+.productCartOptions {
+  .productSpan {
     font-size: 14px;
   }
 }
 
-.quantitySelector{
-  
+.quantitySelector {
 }
 
-.selectorBtn{
+.selectorBtn {
   background-color: transparent;
   border: 1px solid lightgray;
   width: 36px;
   height: 52px;
 }
 
-.addBtn{
+.addBtn {
   background-color: $orangehighlight-colour;
   color: white;
   height: 52px;
@@ -58,26 +56,46 @@
   font-size: 20px;
 }
 
-.descriptionBreaker{
+.descriptionBreaker {
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-.Line{
+.Line {
   width: 200px;
-  height: .5px;
+  height: 0.5px;
   background-color: $orangehighlight-colour;
   align-items: center;
   justify-content: center;
 }
 
-.descriptionTitle{
+.descriptionTitle {
   color: $orangehighlight-colour;
   margin: 0px 2% 0px 2%;
   width: 130px;
   text-align: center;
   white-space: nowrap;
   font-size: 16px;
+}
+
+@media (max-width: 960px) {
+  .detailWrapper {
+    flex-direction: column;
+    width: 100%;
+    max-width: 960px;
+  }
+
+  .detailWrapper2 {
+    flex-direction: column;
+    width: 100%;
+    max-width: 960px;
+    align-items: center;
+  }
+
+  .detailWrapper img {
+    width: 460px;
+    height: 460px;
+  }
 }
