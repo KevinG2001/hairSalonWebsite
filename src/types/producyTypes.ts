@@ -1,4 +1,5 @@
 export type Product = {
+  categoryImg: any;
   brand: any;
   category: string;
   image: string | undefined;
