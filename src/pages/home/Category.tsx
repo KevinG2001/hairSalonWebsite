@@ -23,13 +23,17 @@ function Category() {
       <div className={catStyles.catContainer}>
         <div className={catStyles.cateBox}>
           {uniqueCategories.map((category) => (
-            <Link to={`${category}`} key={category} className={catStyles.catOption}>
-                <img
-                  src={`../assets/category/${category}.webp`}
-                  alt="Category Image"
-                  className={catStyles.catImg}
-                />
-                <button>{category}</button>
+            <Link
+              to={`${category}`}
+              key={category}
+              className={catStyles.catOption}
+            >
+              <img
+                src={`../assets/category/${category}.webp`}
+                alt="Category Image"
+                className={catStyles.catImg}
+              />
+              <button>{category}</button>
             </Link>
           ))}
         </div>
