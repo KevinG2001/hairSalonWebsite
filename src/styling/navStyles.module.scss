@@ -62,7 +62,7 @@
 .navSocials {
   display: flex;
   align-items: center;
-  margin-right: 5%;
+  margin-left: 5%;
 }
 
 .navSocailImg {
@@ -71,11 +71,9 @@
 }
 
 @media (max-width: 1200px) {
-
 }
 
 @media (max-width: 960px) {
-
 }
 
 @media (max-width: 768px) {
@@ -116,7 +114,7 @@
     margin: 0;
   }
 
-  .navSocailImg{
+  .navSocailImg {
     margin: 5px;
   }
 }
