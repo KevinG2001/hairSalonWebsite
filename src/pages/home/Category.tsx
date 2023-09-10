@@ -8,15 +8,9 @@ function filterUniqueCategoryImgs(products: Product[]): { category: string, cate
     new Set(products.map((product) => product.categoryImg))
   );
 
-  // Create an array of objects with category and categoryImg
-  return uniqueCategoryImgs.map((categoryImg) => {
-    const productWithCategoryImg = products.find(product => product.categoryImg === categoryImg);
-    return {
-      category: productWithCategoryImg ? productWithCategoryImg.category : "",
-      categoryImg: categoryImg
-    };
-  });
-}
+// function getCategoryImg(category: string) {
+//   return new URL(`../../assets/category/${category}.webp`, import.meta.url).href;
+// }
 
 function Category() {
   const products = productData.products;
@@ -27,15 +21,13 @@ function Category() {
       <div className={catStyles.catContainer}>
         <div className={catStyles.cateBox}>
           {uniqueCategories.map((category) => (
-            <Link to={`${category.category}`} key={category.category}>
-              <div className={catStyles.catOption} id={catStyles.giftset}>
+            <Link to={`${category}`} key={category} className={catStyles.catOption}>
                 <img
-                  src={category.categoryImg}
+                  src={`../assets/category/${category}.webp`}
                   alt="Category Image"
                   className={catStyles.catImg}
                 />
-                <button>{category.category}</button>
-              </div>
+                <button>{category}</button>
             </Link>
           ))}
         </div>

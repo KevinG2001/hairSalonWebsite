@@ -27,14 +27,14 @@
   align-items: flex-end;
   justify-content: center;
   border-radius: 25px;
-
-  
+  flex-grow: 1;
 }
-.catImg{
-    width: inherit;
-    height: inherit;
-    border-radius: 25px;
-  }
+
+.catImg {
+  width: inherit;
+  height: inherit;
+  border-radius: 25px;
+}
 
 .catOption:hover {
   box-shadow: 0 0 20px rgba(118, 117, 121, 0.7);
@@ -63,34 +63,37 @@
 }
 
 @media (max-width: 1200px) {
-  .cateBox{
+  .cateBox {
     width: 1000px;
     height: auto;
   }
-  .catOption{
+  .catOption {
     width: 220px;
     height: 178px;
   }
 }
 
 @media (max-width: 960px) {
-  .cateBox{
+  .cateBox {
     width: 800px;
     height: auto;
   }
-  .catOption{
+  .catOption {
     width: 176px;
     height: 142px;
   }
 }
 
 @media (max-width: 768px) {
-  .cateBox{
+  .cateBox {
     width: 400px;
     height: auto;
   }
-  .catOption{
+  .catOption {
     width: 145px;
     height: 117px;
+  }
+  .catOption {
+    margin-top: 10%;
   }
 }

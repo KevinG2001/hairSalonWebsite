@@ -10,49 +10,42 @@ function Footer() {
         <div className={footerStyles.footerContentWrapper}>
           <div className={footerStyles.footerContentPanel}>
             <div className={footerStyles.footerTitle}>SHOP NOW</div>
-            <div className={footerStyles.footerContent}>
-              <div className={footerStyles.footerContent}>haircare</div>
+            <div className={footerStyles.footerMenu}>
+              <div>Haircare</div>
             </div>
+            <button className={footerStyles.FooterBtn}>Show all products</button>
           </div>
-          <div className={footerStyles.footerContentPanel}>
-            <div className={footerStyles.footerLogo}>
-              <img src={logo} alt="" />
+          <div className={footerStyles.footerContentPanel} id={footerStyles.middle}>
+            <img src={logo} alt="" className={footerStyles.footerLogo}/>
+            <div className={footerStyles.footerContact}>
+              <div>15 Random Address<br />Dublin, 12</div>
+              <div>(01) 319 1412</div>
             </div>
-            <div className={footerStyles.footerContent}>15 Random Address</div>
-            <div className={footerStyles.footerContent}>Dublin, 12</div>
-            <div className={footerStyles.footerContent}>(01) 319 1412</div>
-          </div>
+            <div className={footerStyles.footerSocialWrapper}>
+              <div>Follow Us</div>
+              <div className={footerStyles.footerSocialHolder}>
+                <img
+                  src={facebookImg}
+                  alt=""
+                  className={footerStyles.footerImg}
+                />
+                <img
+                  src={instagramImg}
+                  alt=""
+                  className={footerStyles.footerImg}
+                />
+              </div>
+              </div>
+            </div>
           <div className={footerStyles.footerContentPanel}>
             <div className={footerStyles.footerTitle}>SITE INFO</div>
-            <div className={footerStyles.footerContent}>Home</div>
-            <div className={footerStyles.footerContent}>dermalogica</div>
-            <div className={footerStyles.footerContent}>
-              delivery & returns policy
+            <div className={footerStyles.footerMenu}>
+              <div>Home</div>
+              <div>Dermalogica</div>
+              <div>delivery & returns</div>
             </div>
-          </div>
-        </div>
-        <div className={footerStyles.footerContentWrapper}>
-          <div className={footerStyles.footerContentPanel}>
-            <button>Show all products</button>
-          </div>
-          <div className={footerStyles.footerContentPanel}>
-            <div className={footerStyles.footerTitle}>Follow Us</div>
-            <div className={footerStyles.footerSocialHolder}>
-              <img
-                src={facebookImg}
-                alt=""
-                className={footerStyles.footerImg}
-              />
-              <img
-                src={instagramImg}
-                alt=""
-                className={footerStyles.footerImg}
-              />
+            <button className={footerStyles.FooterBtn}>book now</button>
             </div>
-          </div>
-          <div className={footerStyles.footerContentPanel}>
-            <button>book now</button>
-          </div>
         </div>
       </div>
     </>
