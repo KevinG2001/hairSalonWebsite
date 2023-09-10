@@ -3,12 +3,10 @@ import productData from "../../data/products.json";
 import { Link } from "react-router-dom";
 import { Product } from "../../types/producyTypes";
 
-function filterUniqueCategorys(products: Product[]): string[] {
-  const uniqueCategories = Array.from(
-    new Set(products.map((product) => product.category))
+function filterUniqueCategoryImgs(products: Product[]): { category: string, categoryImg: string }[] {
+  const uniqueCategoryImgs = Array.from(
+    new Set(products.map((product) => product.categoryImg))
   );
-  return uniqueCategories;
-}
 
 // function getCategoryImg(category: string) {
 //   return new URL(`../../assets/category/${category}.webp`, import.meta.url).href;
@@ -16,7 +14,7 @@ function filterUniqueCategorys(products: Product[]): string[] {
 
 function Category() {
   const products = productData.products;
-  const uniqueCategories = filterUniqueCategorys(products);
+  const uniqueCategories = filterUniqueCategoryImgs(products);
 
   return (
     <>
