@@ -11,9 +11,8 @@
   margin-top: 5%;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   width: 1200px;
-  height: 1000px;
   flex-wrap: wrap;
 }
 
@@ -42,8 +41,9 @@
   text-align: center;
   width: 280px;
   height: 410px;
-  border-radius: 25px;
+  border-radius: 15px;
   margin: 5px 5px 5px 5px;
+  flex-grow: 1;
 }
 
 .Card:hover {
@@ -75,8 +75,8 @@
 
 .CardInfo {
   height: 100%;
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -112,17 +112,17 @@
 
 @media (max-width: 1200px) {
   .Wrapper {
-    height: auto; 
-    max-width: 1000px; 
-    margin: 0 auto; 
+    height: auto;
+    max-width: 1000px;
+    margin: 0 auto;
   }
 
   .Card {
     width: 220px;
-    margin: 5px; 
+    margin: 5px;
   }
 
-  .ProductImg{
+  .ProductImg {
     height: inherit;
     width: inherit;
   }
@@ -130,35 +130,34 @@
 
 @media (max-width: 960px) {
   .Wrapper {
-    height: auto; 
-    max-width: 800px; 
-    margin: 0 auto; 
+    height: auto;
+    max-width: 800px;
+    margin: 0 auto;
   }
 
   .Card {
     width: 176px;
-    margin: 5px; 
+    margin: 5px;
   }
 
-  .ProductImg{
+  .ProductImg {
     height: auto;
   }
 }
 
 @media (max-width: 768px) {
   .Wrapper {
-    height: auto; 
-    max-width: 400px; 
-    margin: 0 auto; 
+    height: auto;
+    max-width: 400px;
+    margin: 0 auto;
   }
 
   .Card {
     width: 145px;
-    margin: 5px; 
+    margin: 5px;
   }
 
-  .ProductImg{
-    height: auto;
+  .ProductImg {
+    width: 190px;
   }
 }
-

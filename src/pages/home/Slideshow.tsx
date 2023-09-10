@@ -5,8 +5,8 @@ import rightArrow from "../../assets/arrow-right.svg";
 import { Link } from "react-router-dom";
 
 const images = [
-  "src/assets/slideshowBgs/backgroundModel.webp",
-  "src/assets/slideshowBgs/backgroundModel2.webp",
+  "../../assets/slideshowBgs/backgroundModel.webp",
+  "../../assets/slideshowBgs/backgroundModel2.webp",
 ];
 
 function Slideshow() {
