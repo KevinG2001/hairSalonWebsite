@@ -65,6 +65,10 @@
   margin-left: 5%;
 }
 
+.burgerMenu {
+  display: none;
+}
+
 .navSocailImg {
   width: 25px;
   margin-right: 15px;
@@ -86,6 +90,13 @@
 
   .navLogo {
     margin: 10px auto; /* Center the logo */
+  }
+  .navTitle {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: auto;
   }
 
   .navUlWrapper {
@@ -116,5 +127,38 @@
 
   .navSocailImg {
     margin: 5px;
+  }
+
+  .burgerMenu {
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    margin-top: 2%;
+    height: 50px;
+    width: 50px;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .burgerMenu .burgerLine {
+    width: 4em;
+    height: 0.5em;
+    background-color: white;
+    border-radius: 50px;
+  }
+
+  .burgerMenu .activeLine1 {
+    transform: translateY(22px) rotate(-45deg);
+    transition: ease-in-out 0.5s;
+  }
+
+  .burgerMenu .activeLine2 {
+    opacity: 0;
+  }
+
+  .burgerMenu .activeLine3 {
+    transform: translateY(-22px) rotate(45deg);
+    transition: ease-in-out 0.5s;
   }
 }

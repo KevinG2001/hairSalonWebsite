@@ -5,8 +5,14 @@ import searchImg from "../../assets/socialImages/searchImg.svg";
 import cartImg from "../../assets/socialImages/cartImg.svg";
 import logo from "../../assets/debonair-logo.svg";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 function Navbar() {
+  const [isActive, setIsActive] = useState(false);
+
+  const toggleBurgerMenu = () => {
+    setIsActive(!isActive);
+  };
   return (
     <>
       <nav className={navStyles.navContainer}>
@@ -14,6 +20,26 @@ function Navbar() {
           <Link to="/">
             <img src={logo} alt="" className={navStyles.navLogo} />
           </Link>
+          <div className={navStyles.burgerMenu} onClick={toggleBurgerMenu}>
+            <div
+              className={`${navStyles.burgerLine} ${
+                isActive ? navStyles.activeLine1 : ""
+              }`}
+              id={navStyles.line1}
+            ></div>
+            <div
+              className={`${navStyles.burgerLine} ${
+                isActive ? navStyles.activeLine2 : ""
+              }`}
+              id={navStyles.line2}
+            ></div>
+            <div
+              className={`${navStyles.burgerLine} ${
+                isActive ? navStyles.activeLine3 : ""
+              }`}
+              id={navStyles.line3}
+            ></div>
+          </div>
         </div>
         <div className={navStyles.navUlWrapper}>
           <ul className={navStyles.navUl}>
