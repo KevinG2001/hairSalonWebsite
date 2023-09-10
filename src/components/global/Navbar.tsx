@@ -38,6 +38,7 @@ function Navbar() {
             ></div>
           </div>
         </div>
+ development
         <div
           className={`${navStyles.dropdown} ${
             isOpen ? navStyles.activeDropdown : ""
@@ -63,6 +64,27 @@ function Navbar() {
             <img src={searchImg} alt="" className={navStyles.navSocailImg} />
             <img src={cartImg} alt="" className={navStyles.navSocailImg} />
           </div>
+
+        <div className={navStyles.navUlWrapper}>
+          <ul className={navStyles.navUl}>
+            <Link to="/" className={navStyles.navLink}>
+              Home
+            </Link>
+            <button className={navStyles.navLink}>Haircare</button>
+            <button className={navStyles.navLink}>Gift Vouchers</button>
+            <Link to="/services-price" className={navStyles.navLink}>
+              Price List
+            </Link>
+            <button className={navStyles.navLink}>Book Now</button>
+            <button className={navStyles.navLink}>Contact</button>
+          </ul>
+        </div>
+        <div className={navStyles.navSocials}>
+          <img src={facebookImg} alt="" className={navStyles.navSocailImg} />
+          <img src={instagramImg} alt="" className={navStyles.navSocailImg} />
+          <img src={searchImg} alt="" className={navStyles.navSocailImg} />
+          <img src={cartImg} alt="" className={navStyles.navSocailImg} />
+ deployment
         </div>
       </nav>
     </>
