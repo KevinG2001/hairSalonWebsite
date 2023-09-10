@@ -2,7 +2,7 @@
 
 .navContainer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   width: 100%;
   height: 100px;
   background-color: #00000080;
@@ -21,6 +21,17 @@
 
 .navUl {
   display: flex;
+  padding-inline-start: 0;
+}
+
+.navUl ul {
+  padding-inline-start: 0;
+}
+
+.dropdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .navLink {
@@ -127,6 +138,15 @@
 
   .navSocailImg {
     margin: 5px;
+  }
+
+  .dropdown {
+    display: none;
+  }
+
+  .activeDropdown {
+    display: flex;
+    flex-direction: column;
   }
 
   .burgerMenu {
