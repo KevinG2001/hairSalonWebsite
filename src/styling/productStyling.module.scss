@@ -14,6 +14,7 @@
   justify-content: flex-start;
   width: 1200px;
   flex-wrap: wrap;
+  overflow-x: auto;
 }
 
 .nProductContainerTitle {
@@ -40,7 +41,7 @@
   align-content: flex-start;
   text-align: center;
   width: 280px;
-  height: 410px;
+  height: 350px;
   border-radius: 15px;
   margin: 5px 5px 5px 5px;
   flex-grow: 1;
