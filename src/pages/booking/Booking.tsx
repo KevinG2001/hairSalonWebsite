@@ -9,11 +9,25 @@ function Booking() {
       <Navbar />
       <div className={styles.container}>
         <div className={styles.sidebar}>
-          {servicesData.services.map((service) => (
-            <>
-              <button className={styles.serviceName}>{service.name}</button>
-            </>
-          ))}
+          <div className={styles.sidebarBox}>
+            {servicesData.services.map((service) => (
+              <>
+                <button className={styles.serviceName}>{service.name}</button>
+              </>
+            ))}
+          </div>
+          <div className={styles.sidebarBox}>
+            <button className={styles.serviceName}>Add On</button>
+            {servicesData["Add-Ons"].map((addon) => (
+              <>
+                <button className={styles.serviceName}>{addon.name}</button>
+              </>
+            ))}
+          </div>
+        </div>
+        <div className={styles.content}>
+          <div>View your booking history to rebook or amend an appointment</div>
+          <div>Or choose a category to see our list of services</div>
         </div>
       </div>
     </>
