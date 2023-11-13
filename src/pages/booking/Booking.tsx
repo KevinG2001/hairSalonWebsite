@@ -1,9 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "../../components/global/Navbar";
 import servicesData from "../../data/services.json";
 import styles from "../../styling/pages/bookingStyles.module.scss";
 
 function Booking() {
+  const [buttonSelected, setbuttonSelected] = useState(false);
+  const [serviceName, setServiceName] = useState<string | null>(null);
+
+  const handleButtonClick = (e) => {
+    setbuttonSelected(!buttonSelected);
+    const clickedServiceName = e.target.innerText;
+    setServiceName(clickedServiceName);
+  };
   return (
     <>
       <Navbar />
@@ -12,22 +20,46 @@ function Booking() {
           <div className={styles.sidebarBox}>
             {servicesData.services.map((service) => (
               <>
-                <button className={styles.serviceName}>{service.name}</button>
+                <button
+                  onClick={handleButtonClick}
+                  className={styles.serviceName}
+                >
+                  {service.name}
+                </button>
               </>
             ))}
           </div>
           <div className={styles.sidebarBox}>
-            <button className={styles.serviceName}>Add On</button>
             {servicesData["Add-Ons"].map((addon) => (
               <>
-                <button className={styles.serviceName}>{addon.name}</button>
+                <button
+                  onClick={(e) => handleButtonClick(e)}
+                  className={styles.serviceName}
+                >
+                  {addon.name}
+                </button>
               </>
             ))}
           </div>
         </div>
         <div className={styles.content}>
-          <div>View your booking history to rebook or amend an appointment</div>
-          <div>Or choose a category to see our list of services</div>
+          {buttonSelected ? (
+            <>
+              <div>{serviceName}</div>
+              {servicesData.services
+                .find((service) => service.name === serviceName)
+                ?.options?.map((option) => (
+                  <div key={option.name}>{option.name}</div>
+                ))}
+            </>
+          ) : (
+            <>
+              <div>
+                View your booking history to rebook or amend an appointment
+              </div>
+              <div>Or choose a category to see our list of services</div>
+            </>
+          )}
         </div>
       </div>
     </>
