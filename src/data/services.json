@@ -1,0 +1,46 @@
+{
+  "services": [
+    {
+      "name": "Bodywave",
+      "options": [
+        {
+          "name": "Bodywave + Blowdry L",
+          "price": "50"
+        },
+        {
+          "name": "Bodywave + Blowdry M",
+          "price": "50"
+        }
+      ]
+    },
+    {
+      "name": "Children",
+      "options": [
+        {
+          "name": "Childrens Haircut",
+          "price": "25"
+        }
+      ]
+    }
+  ],
+  "Add-Ons": [
+    {
+      "name": "Brow Lamination",
+      "options": [
+        {
+          "nane": "Brow Lamination",
+          "price": "50"
+        }
+      ]
+    },
+    {
+      "name": "Colour",
+      "options": [
+        {
+          "nane": "add 10 for inoa",
+          "price": "12"
+        }
+      ]
+    }
+  ]
+}
