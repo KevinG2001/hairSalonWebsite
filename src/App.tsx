@@ -6,13 +6,19 @@ import DisplayBrands from "./components/DisplayBrands";
 import PriceTables from "./pages/PriceTablesFrame";
 import DisplayProductsBranded from "./components/DisplayProductsByBrand";
 import styles from "./styling/AppStyling.module.scss";
+import Booking from "./pages/booking/Booking";
 
 function App() {
   return (
     <Router>
       <div className={styles.mainApp}>
         <Routes>
+          {/* Navbar links */}
           <Route path="/" element={<Home />} />
+          <Route path="/booking" element={<Booking />} />
+          <Route path="/services-price" element={<PriceTables />} />
+
+          {/* Picture links etc... */}
           {/* Shows all products */}
           <Route path="/products" element={<AllProductFrame />} />
           {/* Shows specific product details */}
@@ -25,7 +31,6 @@ function App() {
             element={<DisplayProductsBranded />}
           />
           {/* Shows the price of services */}
-          <Route path="/services-price" element={<PriceTables />} />
         </Routes>
       </div>
     </Router>
