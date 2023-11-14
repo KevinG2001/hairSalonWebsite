@@ -1,3 +1,5 @@
+@import "../default.module.scss";
+
 .container {
   display: flex;
   justify-content: center;
@@ -21,8 +23,14 @@
 .serviceName {
   width: 100%;
   padding: 6px 10px;
-  font-size: 12px;
+  font-size: 16px;
   border: 1px solid gray;
+  background-color: transparent;
+
+  &:hover {
+    background-color: $orangehighlight-colour;
+    color: white;
+  }
 }
 
 .content {
@@ -40,10 +48,13 @@
   width: 100%;
   border: 1px dotted gray;
   padding: 6px 10px;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .optionName {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
 }
 
@@ -54,4 +65,16 @@
 
 .selector {
   margin: 0px 10px;
+  padding: 8px 16px;
+  border-radius: 5px;
+}
+
+.bookBtn {
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 8px 16px;
+
+  background-color: $orangehighlight-colour;
+  color: white;
 }
