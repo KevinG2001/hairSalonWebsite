@@ -2,6 +2,7 @@ import footerStyles from "../../styling/footerStyles.module.scss";
 import facebookImg from "../../assets/socialImages/facebookImg.svg";
 import instagramImg from "../../assets/socialImages/instagramImg.svg";
 import logo from "../../assets/debonair-logo.svg";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -13,12 +14,23 @@ function Footer() {
             <div className={footerStyles.footerMenu}>
               <div>Haircare</div>
             </div>
-            <button className={footerStyles.FooterBtn}>Show all products</button>
+            <Link to="/products">
+              <button className={footerStyles.FooterBtn}>
+                Show all products
+              </button>
+            </Link>
           </div>
-          <div className={footerStyles.footerContentPanel} id={footerStyles.middle}>
-            <img src={logo} alt="" className={footerStyles.footerLogo}/>
+          <div
+            className={footerStyles.footerContentPanel}
+            id={footerStyles.middle}
+          >
+            <img src={logo} alt="" className={footerStyles.footerLogo} />
             <div className={footerStyles.footerContact}>
-              <div>15 Random Address<br />Dublin, 12</div>
+              <div>
+                15 Random Address
+                <br />
+                Dublin, 12
+              </div>
               <div>(01) 319 1412</div>
             </div>
             <div className={footerStyles.footerSocialWrapper}>
@@ -35,8 +47,8 @@ function Footer() {
                   className={footerStyles.footerImg}
                 />
               </div>
-              </div>
             </div>
+          </div>
           <div className={footerStyles.footerContentPanel}>
             <div className={footerStyles.footerTitle}>SITE INFO</div>
             <div className={footerStyles.footerMenu}>
@@ -44,8 +56,10 @@ function Footer() {
               <div>Dermalogica</div>
               <div>delivery & returns</div>
             </div>
-            <button className={footerStyles.FooterBtn}>book now</button>
-            </div>
+            <Link to="/booking">
+              <button className={footerStyles.FooterBtn}>book now</button>
+            </Link>
+          </div>
         </div>
       </div>
     </>
