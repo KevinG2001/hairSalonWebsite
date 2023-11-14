@@ -11,6 +11,7 @@ const images = [
 
 function Slideshow() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [seconds, setSeconds] = useState(0);
   const slideshowContainerRef = useRef<HTMLDivElement>(null);
 
   // Function to handle changing the background image
@@ -23,6 +24,16 @@ function Slideshow() {
       setCurrentImageIndex(index);
     }
   };
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 5000); // Change the index every 2 seconds
+
+    return () => {
+      clearInterval(intervalId); // Cleanup the interval on component unmount
+    };
+  }, []); // Empty dependency array to run the effect only once after initial render
 
   useEffect(() => {
     // Change background image when currentImageIndex changes
