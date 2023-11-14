@@ -17,8 +17,11 @@ const DisplayProducts = () => {
       <Navbar />
       <div className={brandedStyles.Container}>
         <div className={brandedStyles.Wrapper}>
-          <div className={brandedStyles.CardHolder}>
-            {filteredProducts.map((product) => (
+          {filteredProducts.map((product) => (
+            <Link
+              to={`/products/${product.name}`}
+              className={brandedStyles.CardHolder}
+            >
               <div className={brandedStyles.Card} key={product.id}>
                 <img
                   src={product.image}
@@ -30,18 +33,13 @@ const DisplayProducts = () => {
                   <div className={brandedStyles.Price}>€{product.price}</div>
                   <div className={brandedStyles.BtnHolder}>
                     <div className={brandedStyles.Line}></div>
-                    <Link
-                      to={`/products/${product.name}`}
-                      className={brandedStyles.ProductBtn}
-                    >
-                      View Details
-                    </Link>
+                    <div className={brandedStyles.details}>View Details</div>
                     <div className={brandedStyles.Line}></div>
                   </div>
                 </div>
               </div>
-            ))}
-          </div>
+            </Link>
+          ))}
         </div>
       </div>
     </>

@@ -31,6 +31,16 @@
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
+  text-decoration: none;
+  color: black;
+  &:hover {
+    .details {
+      color: white;
+    }
+    .Name {
+      color: white;
+    }
+  }
 }
 
 .Card {
@@ -44,6 +54,17 @@
   border-radius: 15px;
   margin: 5px 5px 5px 5px;
   flex-grow: 1;
+  overflow-x: hidden;
+  text-decoration: none;
+  color: black;
+  &:hover {
+    .details {
+      color: white;
+    }
+    .Title {
+      color: white;
+    }
+  }
 }
 
 .Card:hover {
@@ -52,10 +73,6 @@
   .CardInfo {
     background-color: $orangehighlight-colour;
   }
-  .Title {
-    color: white;
-  }
-
   .Line {
     background-color: white;
   }
@@ -86,18 +103,23 @@
   justify-content: center;
   align-self: center;
 }
-
 .BtnHolder {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  color: $orangehighlight-colour;
 }
 
 .Line {
-  width: 100%;
+  width: 30%;
   height: 0.5px;
   background-color: $orangehighlight-colour;
+  overflow: hidden;
+}
+
+.details {
+  width: 100;
 }
 
 .ProductBtn {
