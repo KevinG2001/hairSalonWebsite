@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import slideStyles from "../../styling/slideStyles.module.scss";
+import slideStyles from "../../styling/pages/home/slideStyles.module.scss";
 import leftArrow from "../../assets/arrow-left.svg";
 import rightArrow from "../../assets/arrow-right.svg";
 import { Link } from "react-router-dom";
@@ -53,6 +53,7 @@ function Slideshow() {
           <div className={slideStyles.slideArrowBtn}>
             <button
               onClick={() => changeBackgroundImage(currentImageIndex - 1)}
+              className={slideStyles.slideBtn}
             >
               <img src={leftArrow} alt="" className={slideStyles.arrowSVG} />
             </button>
@@ -74,6 +75,7 @@ function Slideshow() {
           <div className={slideStyles.slideArrowBtn}>
             <button
               onClick={() => changeBackgroundImage(currentImageIndex + 1)}
+              className={slideStyles.slideBtn}
             >
               <img src={rightArrow} alt="" className={slideStyles.arrowSVG} />
             </button>
