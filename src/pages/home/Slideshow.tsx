@@ -11,7 +11,6 @@ const images = [
 
 function Slideshow() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [seconds, setSeconds] = useState(0);
   const slideshowContainerRef = useRef<HTMLDivElement>(null);
 
   // Function to handle changing the background image
