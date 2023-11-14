@@ -67,10 +67,12 @@ function Slideshow() {
               Debonair Hair & Beauty
             </div>
             <div className={slideStyles.slideButtonHolder}>
-              <Link to={'/products'}>
-              <button id={slideStyles.slideBrowseBtn}>Browse Shop</button>
+              <Link to={"/products"}>
+                <button id={slideStyles.slideBrowseBtn}>Browse Shop</button>
               </Link>
-              <button id={slideStyles.slideBookBtn}>Book Now</button>
+              <Link to="/booking">
+                <button id={slideStyles.slideBookBtn}>Book Now</button>
+              </Link>
             </div>
           </div>
           <div className={slideStyles.slideArrowBtn}>
