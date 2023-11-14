@@ -1,0 +1,57 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+  width: 20%;
+}
+
+.sidebarBox {
+  margin: 5% 0%;
+}
+
+//Button
+.serviceName {
+  width: 100%;
+  padding: 6px 10px;
+  font-size: 12px;
+  border: 1px solid gray;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  font-size: 14px;
+  margin: 2%;
+}
+
+.optionsBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  border: 1px dotted gray;
+  padding: 6px 10px;
+  font-size: 12px;
+}
+
+.optionName {
+  width: 100%;
+}
+
+.barSplitter {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.selector {
+  margin: 0px 10px;
+}
