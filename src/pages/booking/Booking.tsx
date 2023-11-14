@@ -23,9 +23,9 @@ function Booking() {
             {servicesData.services.map((service) => (
               <>
                 <button
+                  key={service.id}
                   onClick={handleButtonClick}
                   className={styles.serviceName}
-                  key={service.id}
                 >
                   {service.name}
                 </button>
@@ -59,12 +59,14 @@ function Booking() {
                       </div>
                     </div>
                     <div className={styles.barSplitter}>
-                      <select>
+                      <select className={styles.selector}>
                         {option.worker.map((worker) => (
-                          <option>{worker}</option>
+                          <option>
+                            {worker} €{option.price}
+                          </option>
                         ))}
                       </select>
-                      <button>Book Now</button>
+                      <button className={styles.bookBtn}>Book Now</button>
                     </div>
                   </div>
                 ))}
@@ -83,10 +85,12 @@ function Booking() {
                     <div className={styles.barSplitter}>
                       <select className={styles.selector}>
                         {option.worker.map((worker) => (
-                          <option>{worker}</option>
+                          <option>
+                            {worker} €{option.price}
+                          </option>
                         ))}
                       </select>
-                      <button>Book Now</button>
+                      <button className={styles.bookBtn}>Book Now</button>
                     </div>
                   </div>
                 ))}
