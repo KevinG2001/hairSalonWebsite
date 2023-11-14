@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import slideStyles from "../../styling/slideStyles.module.scss";
 import leftArrow from "../../assets/arrow-left.svg";
 import rightArrow from "../../assets/arrow-right.svg";
@@ -11,55 +11,40 @@ const images = [
 
 function Slideshow() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [isAnimating, setIsAnimating] = useState(false);
+  const slideshowContainerRef = useRef<HTMLDivElement>(null);
 
-  const nextImage = () => {
-    if (!isAnimating) {
-      setIsAnimating(true);
-      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }
-  };
-
-  const previousImage = () => {
-    if (!isAnimating) {
-      setIsAnimating(true);
-      setCurrentImageIndex((prevIndex) =>
-        prevIndex === 0 ? images.length - 1 : prevIndex - 1
-      );
+  // Function to handle changing the background image
+  const changeBackgroundImage = (index: number) => {
+    if (index == 2) {
+      setCurrentImageIndex(0);
+    } else if (index === -1) {
+      setCurrentImageIndex(images.length - 1);
+    } else {
+      setCurrentImageIndex(index);
     }
   };
 
   useEffect(() => {
-    const interval = setInterval(nextImage, 5000);
-
-    return () => {
-      clearInterval(interval);
-    };
-  }, []);
-
-  const handleTransitionEnd = () => {
-    setIsAnimating(false);
-  };
+    // Change background image when currentImageIndex changes
+    const container = slideshowContainerRef.current;
+    if (container) {
+      container.style.backgroundImage = `url(${images[currentImageIndex]})`;
+    }
+  }, [currentImageIndex]);
 
   return (
     <>
       <div
-        className={`${slideStyles.slideShowContainer} ${
-          isAnimating ? slideStyles.animating : ""
-        }`}
-        onTransitionEnd={handleTransitionEnd}
-        style={{
-          backgroundImage: `url(${images[currentImageIndex]})`,
-        }}
+        className={slideStyles.slideShowContainer}
+        ref={slideshowContainerRef}
       >
         <div className={slideStyles.slideHolder}>
           <div className={slideStyles.slideArrowBtn}>
-            <img
-              src={leftArrow}
-              alt=""
-              className={slideStyles.arrowSVG}
-              onClick={previousImage}
-            />
+            <button
+              onClick={() => changeBackgroundImage(currentImageIndex - 1)}
+            >
+              <img src={leftArrow} alt="" className={slideStyles.arrowSVG} />
+            </button>
           </div>
           <div className={slideStyles.slideCenterBox}>
             <div className={slideStyles.slideTitle}>Welcome To</div>
@@ -76,12 +61,11 @@ function Slideshow() {
             </div>
           </div>
           <div className={slideStyles.slideArrowBtn}>
-            <img
-              src={rightArrow}
-              alt=""
-              className={slideStyles.arrowSVG}
-              onClick={nextImage}
-            />
+            <button
+              onClick={() => changeBackgroundImage(currentImageIndex + 1)}
+            >
+              <img src={rightArrow} alt="" className={slideStyles.arrowSVG} />
+            </button>
           </div>
         </div>
       </div>
