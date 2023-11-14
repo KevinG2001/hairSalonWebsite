@@ -25,7 +25,11 @@ function Newproducts() {
             (
               product //Mapsthrough the filtered products
             ) => (
-              <div className={productStyling.Card} key={product.id}>
+              <Link
+                to={`/products/${product.name}`}
+                className={productStyling.Card}
+                key={product.id}
+              >
                 <img
                   className={productStyling.ProductImg}
                   src={product.image}
@@ -36,16 +40,13 @@ function Newproducts() {
                   <div className={productStyling.Price}>€{product.price}</div>
                   <div className={productStyling.BtnHolder}>
                     <div className={productStyling.Line}></div>
-                    <Link
-                      to={`/products/${product.name}`}
-                      className={productStyling.ProductBtn}
-                    >
+                    <div className={productStyling.ProductBtn}>
                       View Details
-                    </Link>
+                    </div>
                     <div className={productStyling.Line}></div>
                   </div>
                 </div>
-              </div>
+              </Link>
             )
           )}
         </div>

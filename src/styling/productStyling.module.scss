@@ -54,6 +54,17 @@
   border-radius: 15px;
   margin: 5px 5px 5px 5px;
   flex-grow: 1;
+  overflow-x: hidden;
+  text-decoration: none;
+  color: black;
+  &:hover {
+    .details {
+      color: white;
+    }
+    .Title {
+      color: white;
+    }
+  }
 }
 
 .Card:hover {
