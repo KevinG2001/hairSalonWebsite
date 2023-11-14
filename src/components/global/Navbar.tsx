@@ -53,7 +53,9 @@ function Navbar() {
               <Link to="/services-price" className={navStyles.navLink}>
                 Price List
               </Link>
-              <button className={navStyles.navLink}>Book Now</button>
+              <Link to="/booking" className={navStyles.navLink}>
+                Book Now
+              </Link>
               <button className={navStyles.navLink}>Contact</button>
             </ul>
           </div>
