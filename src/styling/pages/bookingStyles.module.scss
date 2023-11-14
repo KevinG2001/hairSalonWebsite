@@ -32,3 +32,26 @@
   font-size: 14px;
   margin: 2%;
 }
+
+.optionsBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  border: 1px dotted gray;
+  padding: 6px 10px;
+  font-size: 12px;
+}
+
+.optionName {
+  width: 100%;
+}
+
+.barSplitter {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.selector {
+  margin: 0px 10px;
+}

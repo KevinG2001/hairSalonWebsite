@@ -1,44 +1,254 @@
 {
   "services": [
     {
+      "id": "1",
       "name": "Bodywave",
       "options": [
         {
           "name": "Bodywave + Blowdry L",
-          "price": "50"
+          "price": "60",
+          "worker": ["Any Stylist", "Stylist1", "Stylist2"]
         },
         {
           "name": "Bodywave + Blowdry M",
-          "price": "50"
+          "price": "55",
+          "worker": ["Any Stylist", "Stylist1", "Stylist2"]
         }
       ]
     },
     {
-      "name": "Children",
+      "id": "2",
+      "name": "Children (Tues-Wed)",
       "options": [
         {
           "name": "Childrens Haircut",
-          "price": "25"
+          "price": "30",
+          "worker": ["Any Stylist", "Stylist1", "Stylist2"]
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Consultation",
+      "options": [
+        {
+          "name": "Standard Consultation",
+          "price": "20",
+          "worker": ["Any Stylist"]
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Hair",
+      "options": [
+        {
+          "name": "Hair Styling",
+          "price": "40",
+          "worker": ["Any Stylist", "Stylist1", "Stylist2"]
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Meche",
+      "options": [
+        {
+          "name": "Partial Meche",
+          "price": "70",
+          "worker": ["Any Stylist"]
+        },
+        {
+          "name": "Full Meche",
+          "price": "90",
+          "worker": ["Any Stylist"]
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Gents",
+      "options": [
+        {
+          "name": "Gents Haircut",
+          "price": "35",
+          "worker": ["Any Stylist", "Stylist1"]
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "name": "OAP Discounts (Tues-Wed)",
+      "options": [
+        {
+          "name": "OAP Haircut",
+          "price": "20",
+          "worker": ["Any Stylist"]
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "name": "Showpony tape extensions",
+      "options": [
+        {
+          "name": "Showpony Extensions - Installation",
+          "price": "120",
+          "worker": ["Any Stylist", "Stylist1"]
         }
       ]
     }
   ],
+
   "Add-Ons": [
     {
-      "name": "Brow Lamination",
+      "id": "1",
+      "name": "Add-Ons",
       "options": [
         {
-          "nane": "Brow Lamination",
-          "price": "50"
+          "name": "Deep Conditioning Treatment",
+          "price": "25",
+          "worker": ["Any Therapist"]
         }
       ]
     },
     {
+      "id": "2",
+      "name": "Brow Lamination",
+      "options": [
+        {
+          "name": "Brow Lamination",
+          "price": "50",
+          "worker": ["Any Therapist"]
+        }
+      ]
+    },
+    {
+      "id": "3",
       "name": "Colour",
       "options": [
         {
-          "nane": "add 10 for inoa",
-          "price": "12"
+          "name": "Root Touch-Up",
+          "price": "60",
+          "worker": ["Any Therapist", "Therapist1"]
+        },
+        {
+          "name": "Balayage",
+          "price": "80",
+          "worker": ["Any Therapist", "Therapist1"]
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Dermalogica",
+      "options": [
+        {
+          "name": "Dermalogica Facial",
+          "price": "70",
+          "worker": ["Any Therapist"]
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Waxing & Tinting",
+      "options": [
+        {
+          "name": "Eyebrow Waxing",
+          "price": "15",
+          "worker": ["Any Therapist"]
+        },
+        {
+          "name": "Lip Waxing",
+          "price": "10",
+          "worker": ["Any Therapist"]
+        },
+        {
+          "name": "Eyebrow Tinting",
+          "price": "20",
+          "worker": ["Any Therapist"]
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Nails",
+      "options": [
+        {
+          "name": "Manicure",
+          "price": "25",
+          "worker": ["Any Therapist"]
+        },
+        {
+          "name": "Pedicure",
+          "price": "30",
+          "worker": ["Any Therapist"]
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Gel Nails",
+      "options": [
+        {
+          "name": "Gel Manicure",
+          "price": "35",
+          "worker": ["Any Therapist"]
+        },
+        {
+          "name": "Gel Pedicure",
+          "price": "40",
+          "worker": ["Any Therapist"]
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "name": "Make-Up",
+      "options": [
+        {
+          "name": "Event Makeup",
+          "price": "55",
+          "worker": ["Any Therapist", "Therapist1"]
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "name": "Lashes",
+      "options": [
+        {
+          "name": "Eyelash Extensions",
+          "price": "70",
+          "worker": ["Any Therapist", "Therapist1"]
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "name": "Reflexology",
+      "options": [
+        {
+          "name": "Reflexology Session",
+          "price": "50",
+          "worker": ["Any Therapist"]
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "name": "Massage",
+      "options": [
+        {
+          "name": "Swedish Massage",
+          "price": "65",
+          "worker": ["Any Therapist"]
+        },
+        {
+          "name": "Deep Tissue Massage",
+          "price": "70",
+          "worker": ["Any Therapist"]
         }
       ]
     }

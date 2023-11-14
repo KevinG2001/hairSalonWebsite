@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Navbar from "../../components/global/Navbar";
 import servicesData from "../../data/services.json";
 import styles from "../../styling/pages/bookingStyles.module.scss";
@@ -23,6 +23,7 @@ function Booking() {
                 <button
                   onClick={handleButtonClick}
                   className={styles.serviceName}
+                  key={service.id}
                 >
                   {service.name}
                 </button>
@@ -33,6 +34,7 @@ function Booking() {
             {servicesData["Add-Ons"].map((addon) => (
               <>
                 <button
+                  key={addon.id}
                   onClick={(e) => handleButtonClick(e)}
                   className={styles.serviceName}
                 >
@@ -45,11 +47,46 @@ function Booking() {
         <div className={styles.content}>
           {buttonSelected ? (
             <>
-              <div>{serviceName}</div>
               {servicesData.services
                 .find((service) => service.name === serviceName)
                 ?.options?.map((option) => (
-                  <div key={option.name}>{option.name}</div>
+                  <div className={styles.optionsBar}>
+                    <div className={styles.barSplitter}>
+                      <div className={styles.optionName} key={option.name}>
+                        {option.name}
+                      </div>
+                    </div>
+                    <div className={styles.barSplitter}>
+                      <select>
+                        {option.worker.map((worker) => (
+                          <option>{worker}</option>
+                        ))}
+                      </select>
+                      <button>Book Now</button>
+                    </div>
+                  </div>
+                ))}
+
+              {servicesData["Add-Ons"]
+                .find((addon) => addon.name === serviceName)
+                ?.options?.map((option) => (
+                  <div className={styles.optionsBar}>
+                    <div className={styles.barSplitter}>
+                      <div className={styles.optionName} key={option.name}>
+                        <option value="" key={option.name}>
+                          {option.name}
+                        </option>
+                      </div>
+                    </div>
+                    <div className={styles.barSplitter}>
+                      <select className={styles.selector}>
+                        {option.worker.map((worker) => (
+                          <option>{worker}</option>
+                        ))}
+                      </select>
+                      <button>Book Now</button>
+                    </div>
+                  </div>
                 ))}
             </>
           ) : (
