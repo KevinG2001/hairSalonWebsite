@@ -78,7 +78,9 @@ function Navbar() {
           <Link to="/booking" className={navStyles.navLink}>
             Book Now
           </Link>
-          <Link className={navStyles.navLink}>Contact</Link>
+          <Link to="" className={navStyles.navLink}>
+            Contact
+          </Link>
         </ul>
         {isOpen && (
           <div className={navStyles.navSocials}>
