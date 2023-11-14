@@ -66,15 +66,21 @@ function Navbar() {
           <Link to="/" className={navStyles.navLink}>
             Home
           </Link>
-          <button className={navStyles.navLink}>Haircare</button>
-          <button className={navStyles.navLink}>Gift Vouchers</button>
+          <Link to="/Haircare" className={navStyles.navLink}>
+            Haircare
+          </Link>
+          <Link to="/Giftset" className={navStyles.navLink}>
+            Gift Vouchers
+          </Link>
           <Link to="/services-price" className={navStyles.navLink}>
             Price List
           </Link>
           <Link to="/booking" className={navStyles.navLink}>
             Book Now
           </Link>
-          <button className={navStyles.navLink}>Contact</button>
+          <Link to="" className={navStyles.navLink}>
+            Contact
+          </Link>
         </ul>
         {isOpen && (
           <div className={navStyles.navSocials}>
